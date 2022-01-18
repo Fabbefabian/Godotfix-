@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Menu Select.wav-13d2c352f5e0e9a04bec2085568f98a4.sample"
+
+[deps]
+
+source_file="res://fdsad/Action RPG Resources/Music and Sounds/Menu Select.wav"
+dest_files=[ "res://.import/Menu Select.wav-13d2c352f5e0e9a04bec2085568f98a4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
