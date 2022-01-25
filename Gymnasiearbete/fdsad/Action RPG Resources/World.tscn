@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://fdsad/Action RPG Resources/World/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://fdsad/Action RPG Resources/World/Chest.tscn" type="PackedScene" id=7]
+[ext_resource path="res://fdsad/Action RPG Resources/World/grass.gd" type="Script" id=8]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -536,6 +537,8 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
+[sub_resource type="AnimationNodeStateMachinePlayback" id=56]
+
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
@@ -566,20 +569,12 @@ position = Vector2( 229, 53 )
 
 [node name="Grass" type="YSort" parent="YSort"]
 
-[node name="Grass2" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 12, 47 )
-
-[node name="Grass" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 1, 47 )
-
-[node name="Grass3" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 26, 47 )
-
 [node name="Grass4" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 65, 144 )
 
 [node name="Grass6" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 242, 114 )
+script = ExtResource( 8 )
 
 [node name="Grass9" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 242, 99 )
@@ -591,10 +586,22 @@ position = Vector2( 242, 129 )
 position = Vector2( 242, 143 )
 
 [node name="Grass5" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 34, 111 )
+position = Vector2( 31, 112 )
+
+[node name="Grass10" parent="YSort/Grass" instance=ExtResource( 6 )]
+position = Vector2( 31, 48 )
+
+[node name="Grass11" parent="YSort/Grass" instance=ExtResource( 6 )]
+position = Vector2( -1, 47 )
+
+[node name="Grass12" parent="YSort/Grass" instance=ExtResource( 6 )]
+position = Vector2( 15, 47 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 153.202, 59.0738 )
+position = Vector2( 153, 61 )
+
+[node name="AnimationTree" parent="YSort/Player" index="3"]
+parameters/playback = SubResource( 56 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 position = Vector2( 1, 0 )
@@ -615,4 +622,7 @@ position = Vector2( 160, 16 )
 position = Vector2( 160, 137 )
 
 [node name="StaticBody2D2" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 230, 109 )
+position = Vector2( 235, 131 )
+
+[editable path="YSort/Player"]
+[editable path="YSort/Player/HitboxPivot/SwordHitbox"]
