@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=68 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://fdsad/Action RPG Resources/World/Chest.tscn" type="PackedScene" id=7]
 [ext_resource path="res://fdsad/Action RPG Resources/World/grass.gd" type="Script" id=8]
+[ext_resource path="res://fdsad/Action RPG Resources/Day_night_cycle.gd" type="Script" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -539,6 +540,39 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=56]
 
+[sub_resource type="Animation" id=57]
+resource_name = "Day_night_cycle"
+length = 24.0
+loop = true
+step = 1.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5.1, 7.1, 12, 15.1, 17.5, 19, 23.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.203922, 0.211765, 0.301961, 1 ), Color( 0.27451, 0.282353, 0.396078, 1 ), Color( 0.435294, 0.447059, 0.329412, 1 ), Color( 1, 1, 1, 1 ), Color( 0.866667, 0.87451, 0.784314, 1 ), Color( 0.643137, 0.647059, 0.572549, 1 ), Color( 0.537255, 0.541176, 0.423529, 1 ), Color( 0.203922, 0.211765, 0.301961, 1 ) ]
+}
+
+[sub_resource type="Animation" id=58]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 0.203922, 0.211765, 0.301961, 1 ) ]
+}
+
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
@@ -576,14 +610,12 @@ position = Vector2( 65, 144 )
 position = Vector2( 242, 114 )
 script = ExtResource( 8 )
 
+[node name="Grass8" parent="YSort/Grass" instance=ExtResource( 6 )]
+position = Vector2( 243, 144 )
+script = ExtResource( 8 )
+
 [node name="Grass9" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 242, 99 )
-
-[node name="Grass7" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 242, 129 )
-
-[node name="Grass8" parent="YSort/Grass" instance=ExtResource( 6 )]
-position = Vector2( 242, 143 )
 
 [node name="Grass5" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 31, 112 )
@@ -623,6 +655,14 @@ position = Vector2( 160, 137 )
 
 [node name="StaticBody2D2" parent="YSort/Bushes" instance=ExtResource( 1 )]
 position = Vector2( 235, 131 )
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.203922, 0.211765, 0.301961, 1 )
+script = ExtResource( 9 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasModulate"]
+anims/Day_night_cycle = SubResource( 57 )
+anims/RESET = SubResource( 58 )
 
 [editable path="YSort/Player"]
 [editable path="YSort/Player/HitboxPivot/SwordHitbox"]
