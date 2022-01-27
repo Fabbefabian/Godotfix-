@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -538,6 +538,10 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
+[sub_resource type="Animation" id=59]
+resource_name = "RollDown"
+length = 0.5
+
 [sub_resource type="AnimationNodeStateMachinePlayback" id=56]
 
 [sub_resource type="Animation" id=57]
@@ -636,8 +640,12 @@ position = Vector2( 15, 47 )
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 153, 61 )
 
+[node name="AnimationPlayer" parent="YSort/Player" index="2"]
+anims/RollDown = SubResource( 59 )
+
 [node name="AnimationTree" parent="YSort/Player" index="3"]
 parameters/playback = SubResource( 56 )
+parameters/Roll/blend_position = Vector2( 0, 0 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 position = Vector2( 1, 0 )
