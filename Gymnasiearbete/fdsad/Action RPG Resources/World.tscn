@@ -541,6 +541,32 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 [sub_resource type="Animation" id=59]
 resource_name = "RollDown"
 length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 55, 56, 57, 58, 59 ]
+}
+tracks/1/type = "method"
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"values": [ {
+"args": [  ],
+"method": "attack_animation_finished"
+} ]
+}
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=56]
 
@@ -558,7 +584,7 @@ tracks/0/enabled = true
 tracks/0/keys = {
 "times": PoolRealArray( 0, 5.1, 7.1, 12, 15.1, 17.5, 19, 23.9 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 0,
+"update": 1,
 "values": [ Color( 0.203922, 0.211765, 0.301961, 1 ), Color( 0.27451, 0.282353, 0.396078, 1 ), Color( 0.435294, 0.447059, 0.329412, 1 ), Color( 1, 1, 1, 1 ), Color( 0.866667, 0.87451, 0.784314, 1 ), Color( 0.643137, 0.647059, 0.572549, 1 ), Color( 0.537255, 0.541176, 0.423529, 1 ), Color( 0.203922, 0.211765, 0.301961, 1 ) ]
 }
 
