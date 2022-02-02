@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=2]
+[gd_scene load_steps=70 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/Chest.tscn" type="PackedScene" id=7]
 [ext_resource path="res://fdsad/Action RPG Resources/World/grass.gd" type="Script" id=8]
 [ext_resource path="res://fdsad/Action RPG Resources/Day_night_cycle.gd" type="Script" id=9]
+[ext_resource path="res://fdsad/Action RPG Resources/Enemies/Bat.tscn" type="PackedScene" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -572,7 +573,7 @@ tracks/1/keys = {
 
 [sub_resource type="Animation" id=57]
 resource_name = "Day_night_cycle"
-length = 24.0
+length = 12.0
 loop = true
 step = 1.0
 tracks/0/type = "value"
@@ -582,10 +583,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 5.1, 7.1, 12, 15.1, 17.5, 19, 23.9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ Color( 0.203922, 0.211765, 0.301961, 1 ), Color( 0.27451, 0.282353, 0.396078, 1 ), Color( 0.435294, 0.447059, 0.329412, 1 ), Color( 1, 1, 1, 1 ), Color( 0.866667, 0.87451, 0.784314, 1 ), Color( 0.643137, 0.647059, 0.572549, 1 ), Color( 0.537255, 0.541176, 0.423529, 1 ), Color( 0.203922, 0.211765, 0.301961, 1 ) ]
+"times": PoolRealArray( 0, 5, 12, 15.1, 17.5, 19, 23.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.435294, 0.447059, 0.329412, 1 ), Color( 1, 1, 1, 1 ), Color( 0.866667, 0.87451, 0.784314, 1 ), Color( 0.643137, 0.647059, 0.572549, 1 ), Color( 0.537255, 0.541176, 0.423529, 1 ), Color( 0.203922, 0.211765, 0.301961, 1 ) ]
 }
 
 [sub_resource type="Animation" id=58]
@@ -632,6 +633,46 @@ position = Vector2( 229, 53 )
 
 [node name="YSort" type="YSort" parent="."]
 
+[node name="Player" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 153, 61 )
+
+[node name="AnimationPlayer" parent="YSort/Player" index="2"]
+anims/RollDown = SubResource( 59 )
+
+[node name="AnimationTree" parent="YSort/Player" index="3"]
+parameters/playback = SubResource( 56 )
+parameters/Roll/blend_position = Vector2( 0, 0 )
+
+[node name="Bat" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 195, 100 )
+
+[node name="Bat2" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 58, 107 )
+
+[node name="Bat3" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 218, 44 )
+
+[node name="Bushes" type="YSort" parent="YSort"]
+position = Vector2( 1, 0 )
+
+[node name="StaticBody2D5" parent="YSort/Bushes" instance=ExtResource( 1 )]
+position = Vector2( 263, 16 )
+
+[node name="StaticBody2D3" parent="YSort/Bushes" instance=ExtResource( 1 )]
+position = Vector2( 304, 112 )
+
+[node name="StaticBody2D6" parent="YSort/Bushes" instance=ExtResource( 1 )]
+position = Vector2( 80, 64 )
+
+[node name="StaticBody2D4" parent="YSort/Bushes" instance=ExtResource( 1 )]
+position = Vector2( 160, 16 )
+
+[node name="StaticBody2D" parent="YSort/Bushes" instance=ExtResource( 1 )]
+position = Vector2( 160, 137 )
+
+[node name="StaticBody2D2" parent="YSort/Bushes" instance=ExtResource( 1 )]
+position = Vector2( 235, 131 )
+
 [node name="Grass" type="YSort" parent="YSort"]
 
 [node name="Grass4" parent="YSort/Grass" instance=ExtResource( 6 )]
@@ -662,37 +703,6 @@ position = Vector2( -1, 47 )
 
 [node name="Grass12" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 15, 47 )
-
-[node name="Player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 153, 61 )
-
-[node name="AnimationPlayer" parent="YSort/Player" index="2"]
-anims/RollDown = SubResource( 59 )
-
-[node name="AnimationTree" parent="YSort/Player" index="3"]
-parameters/playback = SubResource( 56 )
-parameters/Roll/blend_position = Vector2( 0, 0 )
-
-[node name="Bushes" type="YSort" parent="YSort"]
-position = Vector2( 1, 0 )
-
-[node name="StaticBody2D5" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 263, 16 )
-
-[node name="StaticBody2D3" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 304, 112 )
-
-[node name="StaticBody2D6" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 80, 64 )
-
-[node name="StaticBody2D4" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 160, 16 )
-
-[node name="StaticBody2D" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 160, 137 )
-
-[node name="StaticBody2D2" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 235, 131 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 color = Color( 0.203922, 0.211765, 0.301961, 1 )
