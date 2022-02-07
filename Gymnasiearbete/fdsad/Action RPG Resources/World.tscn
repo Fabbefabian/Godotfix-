@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -6,8 +6,6 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://fdsad/Action RPG Resources/World/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://fdsad/Action RPG Resources/World/Grass.tscn" type="PackedScene" id=6]
-[ext_resource path="res://fdsad/Action RPG Resources/World/Chest.tscn" type="PackedScene" id=7]
-[ext_resource path="res://fdsad/Action RPG Resources/World/grass.gd" type="Script" id=8]
 [ext_resource path="res://fdsad/Action RPG Resources/Day_night_cycle.gd" type="Script" id=9]
 [ext_resource path="res://fdsad/Action RPG Resources/Enemies/Bat.tscn" type="PackedScene" id=10]
 
@@ -539,38 +537,6 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
-[sub_resource type="Animation" id=59]
-resource_name = "RollDown"
-length = 0.5
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
-"update": 1,
-"values": [ 55, 56, 57, 58, 59 ]
-}
-tracks/1/type = "method"
-tracks/1/path = NodePath(".")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0.5 ),
-"transitions": PoolRealArray( 1 ),
-"values": [ {
-"args": [  ],
-"method": "attack_animation_finished"
-} ]
-}
-
-[sub_resource type="AnimationNodeStateMachinePlayback" id=56]
-
 [sub_resource type="Animation" id=57]
 resource_name = "Day_night_cycle"
 length = 12.0
@@ -628,20 +594,13 @@ tile_data = PoolIntArray( -196611, 0, 0, -196610, 0, 1, -196609, 0, 1, -262144, 
 
 [node name="YSort2" type="YSort" parent="."]
 
-[node name="Chest" parent="YSort2" instance=ExtResource( 7 )]
-position = Vector2( 229, 53 )
-
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 153, 61 )
 
-[node name="AnimationPlayer" parent="YSort/Player" index="2"]
-anims/RollDown = SubResource( 59 )
-
-[node name="AnimationTree" parent="YSort/Player" index="3"]
-parameters/playback = SubResource( 56 )
-parameters/Roll/blend_position = Vector2( 0, 0 )
+[node name="Camera2D" type="Camera2D" parent="YSort/Player"]
+current = true
 
 [node name="Bat" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 195, 100 )
@@ -680,11 +639,9 @@ position = Vector2( 65, 144 )
 
 [node name="Grass6" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 242, 114 )
-script = ExtResource( 8 )
 
 [node name="Grass8" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 243, 144 )
-script = ExtResource( 8 )
 
 [node name="Grass9" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 242, 99 )
@@ -711,6 +668,3 @@ script = ExtResource( 9 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasModulate"]
 anims/Day_night_cycle = SubResource( 57 )
 anims/RESET = SubResource( 58 )
-
-[editable path="YSort/Player"]
-[editable path="YSort/Player/HitboxPivot/SwordHitbox"]

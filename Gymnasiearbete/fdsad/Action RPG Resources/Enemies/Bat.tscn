@@ -47,7 +47,6 @@ radius = 6.0
 height = 6.0
 
 [node name="Bat" type="KinematicBody2D"]
-position = Vector2( 0, -1 )
 collision_layer = 16
 script = ExtResource( 4 )
 
@@ -75,7 +74,6 @@ shape = SubResource( 8 )
 max_health = 2.0
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
-[connection signal="area_entered" from="Hurtbox" to="Hurtbox" method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
 [editable path="Hurtbox"]

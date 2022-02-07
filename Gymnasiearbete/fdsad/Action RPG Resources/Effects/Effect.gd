@@ -1,14 +1,8 @@
-extends Node2D
-
-onready var animatedSprite = $AnimatedSprite
+extends AnimatedSprite
 
 func _ready():
-	animatedSprite.play("Animate") 
-	animatedSprite.frame = 0
+	self.connect("animation_finished", self, "_on_animation_finished")
+	play("Animate") 
 
-
-
-
-
-func _on_AnimatedSprite_animation_finished():
+func _on_animation_finished():
 	queue_free()
