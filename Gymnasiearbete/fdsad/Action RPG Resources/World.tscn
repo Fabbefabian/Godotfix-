@@ -574,11 +574,11 @@ tracks/0/keys = {
 [node name="World" type="Node2D"]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 161, 98 )
+position = Vector2( 101, 89 )
 scale = Vector2( 1, 0.94 )
 texture = ExtResource( 3 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 2000, 2000 )
+region_rect = Rect2( -6, 7, 671, 285 )
 
 [node name="DirtTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -662,7 +662,7 @@ position = Vector2( -1, 47 )
 [node name="Grass12" parent="YSort/Grass" instance=ExtResource( 6 )]
 position = Vector2( 15, 47 )
 
-[node name="StaticBody2D" parent="YSort" instance=ExtResource( 7 )]
+[node name="Hus" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 313, 37 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
@@ -673,3 +673,6 @@ script = ExtResource( 9 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasModulate"]
 anims/Day_night_cycle = SubResource( 57 )
 anims/RESET = SubResource( 58 )
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 1
