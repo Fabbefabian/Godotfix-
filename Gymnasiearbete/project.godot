@@ -39,7 +39,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Gymnasiearbete"
-run/main_scene="res://fdsad/Action RPG Resources/Menu.tscn"
+run/main_scene="res://fdsad/Action RPG Resources/World.tscn"
 config/icon="res://icon.png"
 
 [autoload]

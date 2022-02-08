@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fdsad/Meny/main_menu_tutorial-main/scenes/menus/MenuButton.tscn" type="PackedScene" id=1]
+[ext_resource path="res://fdsad/Meny/main_menu_tutorial-main/scenes/menus/MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://fdsad/Meny/main_menu_tutorial-main/resources/sprites/ui/main_menu.png" type="Texture" id=3]
+[ext_resource path="res://fdsad/Meny/main_menu_tutorial-main/resources/fonts/Minecraft.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 22
+font_data = ExtResource( 4 )
+
+[node name="MainMenu" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 240, 135 )
+texture = ExtResource( 3 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 80.0
+margin_right = 80.0
+margin_bottom = 94.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
+margin_right = 320.0
+margin_bottom = 135.0
+rect_min_size = Vector2( 0, 135 )
+
+[node name="Label" type="Label" parent="VBoxContainer/CenterContainer"]
+margin_left = 96.0
+margin_top = 56.0
+margin_right = 223.0
+margin_bottom = 79.0
+custom_fonts/font = SubResource( 1 )
+text = "BEST GAME"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
+margin_top = 139.0
+margin_right = 320.0
+margin_bottom = 274.0
+rect_min_size = Vector2( 0, 135 )
+alignment = 1
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Start" parent="VBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 33.0
+margin_right = 320.0
+margin_bottom = 53.0
+focus_neighbour_top = NodePath("../Exit")
+focus_neighbour_bottom = NodePath("../Options")
+text = "Start"
+
+[node name="Options" parent="VBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_right = 320.0
+focus_neighbour_top = NodePath("../Start")
+focus_neighbour_bottom = NodePath("../Exit")
+
+[node name="Exit" parent="VBoxContainer/VBoxContainer" instance=ExtResource( 1 )]
+margin_top = 81.0
+margin_right = 320.0
+margin_bottom = 101.0
+focus_neighbour_top = NodePath("../Options")
+focus_neighbour_bottom = NodePath("../Start")
+
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Start" to="." method="_on_Start_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Options" to="." method="_on_Options_pressed"]
+[connection signal="pressed" from="VBoxContainer/VBoxContainer/Exit" to="." method="_on_Exit_pressed"]
