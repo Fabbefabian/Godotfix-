@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/transparent_black.png-559e6ce68d1a7414f518f2fabb266911.stex"
+path="res://.import/Simplified_GrassHillsWater.png-bf309813fad7b7f23496cc8368ec7ca4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/Meny/main_menu_tutorial-main/resources/sprites/ui/transparent_black.png"
-dest_files=[ "res://.import/transparent_black.png-559e6ce68d1a7414f518f2fabb266911.stex" ]
+source_file="res://fdsad/Action RPG Resources/World/GrassTileset/Simplified_GrassHillsWater.png"
+dest_files=[ "res://.import/Simplified_GrassHillsWater.png-bf309813fad7b7f23496cc8368ec7ca4.stex" ]
 
 [params]
 
@@ -22,7 +22,7 @@ compress/normal_map=0
 flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
-flags/anisotropic=false
+flags/anisotropic=true
 flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
