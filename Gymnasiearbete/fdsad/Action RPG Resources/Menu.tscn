@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/Menu.gd" type="Script" id=1]
-[ext_resource path="res://fdsad/Action RPG Resources/World/Night Moon Background Inkscape Tutorial MadFireOn Youtube 2.png" type="Texture" id=3]
+[ext_resource path="res://fdsad/Action RPG Resources/piCTURE/16999214.png" type="Texture" id=3]
+[ext_resource path="res://fdsad/Action RPG Resources/Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=4]
 
 [sub_resource type="Theme" id=6]
 
@@ -31,7 +32,17 @@ Button/styles/hover = SubResource( 8 )
 Button/styles/normal = SubResource( 7 )
 Button/styles/pressed = SubResource( 10 )
 
-[sub_resource type="Theme" id=9]
+[sub_resource type="DynamicFont" id=11]
+size = 12
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=12]
+size = 12
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 12
+font_data = ExtResource( 4 )
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
@@ -46,8 +57,8 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 161.5, 89.5 )
-scale = Vector2( 0.250781, 0.248611 )
+position = Vector2( 161, 89.5 )
+scale = Vector2( 0.167708, 0.163889 )
 texture = ExtResource( 3 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -66,21 +77,22 @@ __meta__ = {
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
 margin_right = 63.0
-margin_bottom = 14.0
-theme = SubResource( 9 )
-custom_colors/font_color_disabled = Color( 0.819608, 0.0901961, 0.0901961, 1 )
+margin_bottom = 17.0
+custom_fonts/font = SubResource( 11 )
 text = "Start"
 
 [node name="Options" type="Button" parent="VBoxContainer"]
-margin_top = 18.0
+margin_top = 21.0
 margin_right = 63.0
-margin_bottom = 32.0
+margin_bottom = 38.0
+custom_fonts/font = SubResource( 12 )
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 36.0
+margin_top = 42.0
 margin_right = 63.0
-margin_bottom = 50.0
+margin_bottom = 59.0
+custom_fonts/font = SubResource( 13 )
 text = "Quit"
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_Button_pressed"]

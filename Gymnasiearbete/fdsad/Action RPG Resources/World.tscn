@@ -11,6 +11,31 @@
 [ext_resource path="res://fdsad/Action RPG Resources/Day_night_cycle.gd" type="Script" id=9]
 [ext_resource path="res://fdsad/Action RPG Resources/Enemies/Bat.tscn" type="PackedScene" id=10]
 
+[sub_resource type="TileSet" id=59]
+0/name = "gäs.png 0"
+0/texture = ExtResource( 8 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 320, 256 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 1, 0 ), 416, Vector2( 1, 1 ), 438, Vector2( 1, 2 ), 438, Vector2( 1, 3 ), 38, Vector2( 2, 0 ), 200, Vector2( 2, 1 ), 219, Vector2( 2, 2 ), 219, Vector2( 2, 3 ), 11, Vector2( 2, 10 ), 416, Vector2( 2, 11 ), 38, Vector2( 3, 5 ), 384, Vector2( 3, 6 ), 6, Vector2( 3, 10 ), 200, Vector2( 3, 11 ), 11, Vector2( 4, 5 ), 510, Vector2( 4, 6 ), 447, Vector2( 5, 5 ), 507, Vector2( 5, 6 ), 255, Vector2( 6, 5 ), 192, Vector2( 6, 6 ), 3, Vector2( 7, 10 ), 384, Vector2( 7, 11 ), 6, Vector2( 8, 10 ), 504, Vector2( 8, 11 ), 63, Vector2( 9, 10 ), 504, Vector2( 9, 11 ), 63, Vector2( 10, 10 ), 200, Vector2( 10, 11 ), 11, Vector2( 12, 5 ), 416, Vector2( 12, 6 ), 38, Vector2( 13, 4 ), 416, Vector2( 13, 5 ), 511, Vector2( 13, 6 ), 511, Vector2( 13, 7 ), 38, Vector2( 13, 11 ), 438, Vector2( 13, 12 ), 438, Vector2( 13, 13 ), 438, Vector2( 13, 14 ), 54, Vector2( 14, 4 ), 200, Vector2( 14, 5 ), 511, Vector2( 14, 6 ), 511, Vector2( 14, 7 ), 11, Vector2( 14, 11 ), 511, Vector2( 14, 12 ), 511, Vector2( 14, 13 ), 511, Vector2( 14, 14 ), 63, Vector2( 15, 5 ), 200, Vector2( 15, 6 ), 3, Vector2( 15, 11 ), 511, Vector2( 15, 12 ), 511, Vector2( 15, 13 ), 511, Vector2( 15, 14 ), 63, Vector2( 16, 0 ), 256, Vector2( 16, 1 ), 4, Vector2( 16, 11 ), 511, Vector2( 16, 12 ), 511, Vector2( 16, 13 ), 511, Vector2( 16, 14 ), 63, Vector2( 17, 0 ), 64, Vector2( 17, 1 ), 1, Vector2( 17, 7 ), 432, Vector2( 17, 8 ), 54, Vector2( 18, 7 ), 216, Vector2( 18, 8 ), 27 ]
+0/autotile/icon_coordinate = Vector2( 15, 12 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
+
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
 0/texture = ExtResource( 4 )
@@ -551,10 +576,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 5, 12, 15.1, 17.5, 19, 23.9 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 5, 12 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 0.435294, 0.447059, 0.329412, 1 ), Color( 1, 1, 1, 1 ), Color( 0.866667, 0.87451, 0.784314, 1 ), Color( 0.643137, 0.647059, 0.572549, 1 ), Color( 0.537255, 0.541176, 0.423529, 1 ), Color( 0.203922, 0.211765, 0.301961, 1 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.435294, 0.447059, 0.329412, 1 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=58]
@@ -572,39 +597,21 @@ tracks/0/keys = {
 "values": [ Color( 0.203922, 0.211765, 0.301961, 1 ) ]
 }
 
-[sub_resource type="TileSet" id=59]
-0/name = "gäs.png 0"
-0/texture = ExtResource( 8 )
-0/tex_offset = Vector2( 0, 0 )
-0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 320, 288 )
-0/tile_mode = 1
-0/autotile/bitmask_mode = 1
-0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 288, Vector2( 0, 1 ), 36, Vector2( 0, 4 ), 256, Vector2( 0, 5 ), 4, Vector2( 1, 0 ), 72, Vector2( 1, 1 ), 9, Vector2( 1, 4 ), 64, Vector2( 1, 5 ), 1, Vector2( 2, 2 ), 448, Vector2( 2, 3 ), 7, Vector2( 4, 5 ), 56, Vector2( 6, 2 ), 384, Vector2( 6, 3 ), 6, Vector2( 6, 5 ), 256, Vector2( 6, 6 ), 292, Vector2( 6, 7 ), 4, Vector2( 7, 2 ), 192, Vector2( 7, 3 ), 3, Vector2( 7, 5 ), 448, Vector2( 7, 6 ), 511, Vector2( 7, 7 ), 7, Vector2( 8, 3 ), 256, Vector2( 8, 4 ), 4, Vector2( 8, 5 ), 64, Vector2( 8, 6 ), 73, Vector2( 8, 7 ), 1, Vector2( 9, 3 ), 64, Vector2( 9, 4 ), 1 ]
-0/autotile/icon_coordinate = Vector2( 0, 0 )
-0/autotile/tile_size = Vector2( 32, 32 )
-0/autotile/spacing = 0
-0/autotile/occluder_map = [  ]
-0/autotile/navpoly_map = [  ]
-0/autotile/priority_map = [  ]
-0/autotile/z_index_map = [  ]
-0/occluder_offset = Vector2( 0, 0 )
-0/navigation_offset = Vector2( 0, 0 )
-0/shape_offset = Vector2( 0, 0 )
-0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape_one_way = false
-0/shape_one_way_margin = 0.0
-0/shapes = [  ]
-0/z_index = 0
-
 [node name="World" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 59 )
+cell_size = Vector2( 16, 16 )
+cell_quadrant_size = 32
+format = 1
+tile_data = PoolIntArray( 1048586, -1610612736, 458769, 1048587, -1610612736, 655369, 1048588, -1610612736, 458770, 1114122, -1610612736, 851981, 1114123, -1610612736, 327693, 1114124, -1610612736, 327685, 1114125, -1610612736, 655368, 1114126, -1610612736, 458770, 1179657, -1610612736, 0, 1179658, -1610612736, 0, 1179659, -1610612736, 786446, 1179660, -1610612736, 851984, 1179661, -1610612736, 720910, 1179662, -1610612736, 0, 1179663, -1610612736, 0, 1245194, -1610612736, 524305, 1245195, -1610612736, 720904, 1245196, -1610612736, 720905, 1245197, -1610612736, 917520, 1245198, -1610612736, 524306 )
 
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 101, 89 )
 scale = Vector2( 1, 0.94 )
 texture = ExtResource( 3 )
 region_enabled = true
-region_rect = Rect2( -6, 7, 671, 285 )
+region_rect = Rect2( -559, -680, 1160.58, 906.842 )
 
 [node name="DirtTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -630,13 +637,22 @@ position = Vector2( 153, 61 )
 current = true
 
 [node name="Bat" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 195, 100 )
+position = Vector2( 173, 125 )
 
 [node name="Bat2" parent="YSort" instance=ExtResource( 10 )]
 position = Vector2( 58, 107 )
 
 [node name="Bat3" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 218, 44 )
+position = Vector2( 224, 17 )
+
+[node name="Bat4" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 285, 230 )
+
+[node name="Bat5" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 31, -133 )
+
+[node name="Bat6" parent="YSort" instance=ExtResource( 10 )]
+position = Vector2( 349, 60 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 position = Vector2( 1, 0 )
@@ -692,6 +708,7 @@ position = Vector2( 15, 47 )
 position = Vector2( 313, 37 )
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+light_mask = 0
 position = Vector2( 197, 34 )
 color = Color( 0.203922, 0.211765, 0.301961, 1 )
 script = ExtResource( 9 )
@@ -699,9 +716,3 @@ script = ExtResource( 9 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasModulate"]
 anims/Day_night_cycle = SubResource( 57 )
 anims/RESET = SubResource( 58 )
-
-[node name="TileMap" type="TileMap" parent="."]
-tile_set = SubResource( 59 )
-cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 32
-format = 1
