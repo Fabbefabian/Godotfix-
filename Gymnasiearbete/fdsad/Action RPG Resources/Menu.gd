@@ -13,4 +13,5 @@ func _on_QuitButton_pressed():
 
 
 func _on_Options_pressed():
-	var options = load("")
+	var options = load("res://fdsad/Action RPG Resources/OPtions.tscn") .instance()
+	get_tree (). change_scene("res://fdsad/Action RPG Resources/OPtions.tscn")
