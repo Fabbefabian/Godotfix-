@@ -1,7 +1,7 @@
 extends Control
 
 func _ready():
-	pass
+	$VBoxContainer/Fullscreen.grab_focus()
 
 
 func _on_Fullscreen_pressed():
