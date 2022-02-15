@@ -66,12 +66,12 @@ func move_state(delta):
 		state = ATTACK
 	
 	
-func roll_state(delta):
+func roll_state(_delta):
 	velocity = roll_vector * ROLL_SPEED
 	animationState.travel("Roll")
 	move()
 	
-func attack_state(delta):
+func attack_state(_delta):
 	velocity = Vector2.ZERO
 	animationState.travel("Attack")
 	
@@ -88,7 +88,7 @@ func attack_animation_finished():
 	state = MOVE
 
 
-func _on_Hurtbox_area_entered(area):
+func _on_Hurtbox_area_entered(_area):
 	if hurtbox.invincible == false:" conditional"
 	stats.health -= 1
 	hurtbox.start_invincibility(0.5)
