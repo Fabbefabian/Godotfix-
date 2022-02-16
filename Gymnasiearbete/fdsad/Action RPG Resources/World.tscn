@@ -1,4 +1,4 @@
-[gd_scene load_steps=129 format=2]
+[gd_scene load_steps=156 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/Lake_Tileset.png" type="Texture" id=11]
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/GrassHillsWater.png" type="Texture" id=12]
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/Props.png" type="Texture" id=13]
+[ext_resource path="res://fdsad/Action RPG Resources/Player/pony.png" type="Texture" id=14]
 
 [sub_resource type="ConvexPolygonShape2D" id=63]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1129,6 +1130,139 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 } ]
 0/z_index = 0
 
+[sub_resource type="AtlasTexture" id=117]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=118]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1536, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=119]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 512, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=120]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1024, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=121]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 2048, 0, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=122]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 0, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=123]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 512, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=124]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1024, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=125]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1536, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=126]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 2048, 512, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=127]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 0, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=128]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 512, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=129]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1024, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=130]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1536, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=131]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 2048, 1024, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=132]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 0, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=133]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 512, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=134]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1024, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=135]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1536, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=136]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 2048, 1536, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=137]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 0, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=138]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 512, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=139]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1024, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=140]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 1536, 2048, 512, 512 )
+
+[sub_resource type="AtlasTexture" id=141]
+flags = 8
+atlas = ExtResource( 14 )
+region = Rect2( 2048, 2048, 512, 512 )
+
+[sub_resource type="SpriteFrames" id=142]
+animations = [ {
+"frames": [ SubResource( 117 ), SubResource( 118 ), SubResource( 119 ), SubResource( 120 ), SubResource( 121 ), SubResource( 122 ), SubResource( 123 ), SubResource( 124 ), SubResource( 125 ), SubResource( 126 ), SubResource( 127 ), SubResource( 128 ), SubResource( 129 ), SubResource( 130 ), SubResource( 131 ), SubResource( 132 ), SubResource( 133 ), SubResource( 134 ), SubResource( 135 ), SubResource( 136 ), SubResource( 137 ), SubResource( 138 ), SubResource( 139 ), SubResource( 140 ), SubResource( 141 ) ],
+"loop": true,
+"name": "pony",
+"speed": 5.0
+} ]
+
 [sub_resource type="Animation" id=57]
 resource_name = "Day_night_cycle"
 length = 12.0
@@ -1181,6 +1315,7 @@ tile_data = PoolIntArray( 1835023, 0, 7, 1835024, 0, 196612, 1835025, 0, 196612,
 tile_set = SubResource( 61 )
 cell_size = Vector2( 16, 16 )
 format = 1
+tile_data = PoolIntArray( 2162701, 0, 7, 2162702, 0, 131081, 2162703, 0, 196612, 2162704, 0, 8, 2228237, 0, 65545, 2228238, 0, 327689, 2228239, 0, 327689, 2228240, 0, 131077, 2293773, 0, 65545, 2293774, 0, 262153, 2293775, 0, 327689, 2293776, 0, 9, 2359309, 0, 65543, 2359310, 0, 131073, 2359311, 0, 327688, 2359312, 0, 131077, 2424846, 0, 65543, 2424847, 0, 196617, 2424848, 0, 65544 )
 
 [node name="Plankor med spik" type="TileMap" parent="."]
 tile_set = SubResource( 62 )
@@ -1209,6 +1344,14 @@ tile_data = PoolIntArray( -196611, 0, 0, -196610, 0, 1, -196609, 0, 1, -262144, 
 [node name="YSort2" type="YSort" parent="."]
 
 [node name="YSort" type="YSort" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="YSort"]
+position = Vector2( 273, 51 )
+scale = Vector2( 0.0488281, 0.0449219 )
+frames = SubResource( 142 )
+animation = "pony"
+frame = 9
+playing = true
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 153, 61 )
