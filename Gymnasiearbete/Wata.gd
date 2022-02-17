@@ -1,4 +1,4 @@
-extends TileMap
+extends Node2D
 
 const TILEMAP = 1
 func _on_body_entered(body):
