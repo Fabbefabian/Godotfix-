@@ -786,17 +786,17 @@ tracks/0/keys = {
 
 [node name="World" type="Node2D"]
 
-[node name="Node2D" parent="." instance=ExtResource( 11 )]
-
-[node name="WADA" parent="Node2D" index="0"]
-tile_data = PoolIntArray( 1835023, 0, 196614, 1835025, 0, 196614, 1835027, 0, 262151, 1900563, 0, 65536, 1900564, 0, 4, 1900565, 0, 2, 1900566, 0, 196615, 1966087, 0, 196616, 1966088, 0, 4, 1966089, 0, 2, 1966090, 0, 4, 1966091, 0, 2, 1966092, 0, 2, 1966093, 0, 5, 1966095, 0, 65542, 1966096, 0, 196615, 2031621, 0, 65542, 2031622, 0, 196615, 2031640, 0, 196616, 2031641, 0, 5, 2293782, 0, 7, 2293783, 0, 196612, 2293784, 0, 196612, 2293785, 0, 8, 2359315, 0, 65542, 2359316, 0, 4, 2359317, 0, 2, 2359318, 0, 327684, 2359319, 0, 196613, 2359320, 0, 196613, 2359321, 0, 65544 )
-
 [node name="Background" type="Sprite" parent="."]
 position = Vector2( 101, 89 )
 scale = Vector2( 1, 0.94 )
 texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( -559, -680, 1160.58, 906.842 )
+
+[node name="Node2D" parent="." instance=ExtResource( 11 )]
+
+[node name="WADA" parent="Node2D" index="0"]
+tile_data = PoolIntArray( 2293782, 0, 7, 2293783, 0, 196612, 2293784, 0, 196612, 2293785, 0, 8, 2359315, 0, 65542, 2359316, 0, 4, 2359317, 0, 2, 2359318, 0, 327684, 2359319, 0, 196613, 2359320, 0, 196613, 2359321, 0, 65544 )
 
 [node name="GrassFunkar2,0" type="TileMap" parent="."]
 tile_set = SubResource( 61 )
@@ -837,7 +837,7 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 9
+frame = 2
 playing = true
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
