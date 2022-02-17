@@ -1350,7 +1350,6 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 9
 playing = true
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
