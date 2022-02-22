@@ -72,7 +72,7 @@ animations = [ {
 "frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ) ],
 "loop": true,
 "name": "Start",
-"speed": 7.0
+"speed": 5.0
 } ]
 
 [sub_resource type="StyleBoxFlat" id=8]
@@ -132,7 +132,7 @@ position = Vector2( 161, 90 )
 scale = Vector2( 0.592593, 0.542169 )
 frames = SubResource( 30 )
 animation = "Start"
-frame = 11
+frame = 9
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
