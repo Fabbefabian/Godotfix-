@@ -142,6 +142,7 @@ pause={
 2d_physics/layer_4="EnemyHurbox"
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="SoftCollision"
+2d_physics/layer_8="Water"
 
 [physics]
 
