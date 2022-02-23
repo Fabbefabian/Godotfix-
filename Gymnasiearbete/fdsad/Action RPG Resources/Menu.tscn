@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/Menu.gd" type="Script" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/menu/wp1933961.png" type="Texture" id=2]
@@ -75,6 +75,13 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="StyleBoxFlat" id=43]
+bg_color = Color( 0.270588, 0.27451, 0.286275, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
 [sub_resource type="StyleBoxFlat" id=8]
 content_margin_left = 0.0
 bg_color = Color( 0.270588, 0.27451, 0.286275, 1 )
@@ -92,13 +99,14 @@ corner_radius_bottom_right = 7
 corner_radius_bottom_left = 7
 
 [sub_resource type="StyleBoxFlat" id=10]
-bg_color = Color( 0.270588, 0.27451, 0.286275, 1 )
+bg_color = Color( 0.270588, 0.27451, 0.286275, 0 )
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 corner_radius_bottom_right = 5
 corner_radius_bottom_left = 5
 
 [sub_resource type="Theme" id=2]
+Button/styles/focus = SubResource( 43 )
 Button/styles/hover = SubResource( 8 )
 Button/styles/normal = SubResource( 7 )
 Button/styles/pressed = SubResource( 10 )
@@ -128,16 +136,16 @@ __meta__ = {
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+visible = false
 position = Vector2( 161, 90 )
 scale = Vector2( 0.592593, 0.542169 )
 frames = SubResource( 30 )
 animation = "Start"
-frame = 9
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 537, 84 )
-scale = Vector2( 0.166667, 0.166667 )
+position = Vector2( 161.5, 90 )
+scale = Vector2( 0.167188, 0.166667 )
 texture = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -149,15 +157,16 @@ margin_right = 81.0
 margin_bottom = -4.0
 rect_scale = Vector2( 1.54521, 0.876272 )
 theme = SubResource( 2 )
+custom_constants/separation = 5
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
-margin_top = 9.0
+margin_top = 8.0
 margin_right = 66.0
-margin_bottom = 20.0
+margin_bottom = 19.0
 focus_neighbour_top = NodePath("../QuitButton")
 custom_fonts/font = SubResource( 11 )
 text = "Start"
@@ -170,9 +179,9 @@ custom_fonts/font = SubResource( 12 )
 text = "Options"
 
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
-margin_top = 39.0
+margin_top = 40.0
 margin_right = 66.0
-margin_bottom = 50.0
+margin_bottom = 51.0
 focus_neighbour_bottom = NodePath("../StartButton")
 custom_fonts/font = SubResource( 13 )
 text = "Quit"

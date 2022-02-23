@@ -7,3 +7,6 @@ func _process(delta):
 	var CurrentFrame = range_lerp(TimeInSeconds,0,360,0,12)
 	$AnimationPlayer.play("Day_night_cycle")
 	$AnimationPlayer.seek(CurrentFrame)
+
+
+

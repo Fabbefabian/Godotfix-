@@ -1,8 +1,22 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://OPtions.gd" type="Script" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/menu/wp1933961.png" type="Texture" id=2]
 [ext_resource path="res://fdsad/Action RPG Resources/Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.270588, 0.27451, 0.286275, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=11]
+Button/styles/focus = SubResource( 10 )
+Button/styles/pressed = SubResource( 12 )
 
 [sub_resource type="StyleBoxFlat" id=8]
 bg_color = Color( 0.270588, 0.27451, 0.286275, 1 )
@@ -43,6 +57,7 @@ font_data = ExtResource( 3 )
 [node name="OPtions" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = -1.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -60,15 +75,17 @@ margin_left = 31.0
 margin_top = -59.0
 margin_right = 85.0
 margin_bottom = -23.0
+theme = SubResource( 11 )
+custom_constants/separation = 5
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Fullscreen" type="Button" parent="VBoxContainer"]
-margin_top = 5.0
+margin_top = 4.0
 margin_right = 54.0
-margin_bottom = 16.0
+margin_bottom = 15.0
 focus_neighbour_top = NodePath("../Back")
 theme = SubResource( 6 )
 custom_fonts/font = SubResource( 1 )
