@@ -671,8 +671,8 @@ script = ExtResource( 1 )
 MAX_SPEED = 100
 
 [node name="Shadow" type="Sprite" parent="."]
-position = Vector2( 0, -1 )
-scale = Vector2( 0.875, 1 )
+position = Vector2( -1.5, -1 )
+scale = Vector2( 0.8125, 1.2 )
 texture = ExtResource( 6 )
 
 [node name="Sprite" type="Sprite" parent="."]

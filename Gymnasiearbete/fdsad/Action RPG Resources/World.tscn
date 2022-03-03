@@ -1388,48 +1388,46 @@ smoothing_speed = 4.0
 
 [node name="YSort" type="YSort" parent="."]
 
-[node name="YSort2" type="YSort" parent="YSort"]
-
-[node name="Bridge" type="StaticBody2D" parent="YSort/YSort2" groups=["Bridges"]]
+[node name="Bridge" type="StaticBody2D" parent="YSort" groups=["Bridges"]]
 script = ExtResource( 18 )
 
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="YSort/YSort2/Bridge"]
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( -26, -219 )
 shape = SubResource( 206 )
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="YSort/YSort2/Bridge"]
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( -28, -305 )
 shape = SubResource( 202 )
 
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="YSort/YSort2/Bridge"]
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( 3, -226 )
 shape = SubResource( 203 )
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="YSort/YSort2/Bridge"]
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( -45, -232 )
 shape = SubResource( 204 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/YSort2/Bridge"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( 70, -233 )
 shape = SubResource( 205 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="YSort/YSort2/Bridge"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( -1, -196 )
 shape = SubResource( 144 )
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="YSort/YSort2/Bridge"]
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( -15, -196 )
 shape = SubResource( 200 )
 
-[node name="Area2D" type="Area2D" parent="YSort/YSort2/Bridge"]
+[node name="Area2D" type="Area2D" parent="YSort/Bridge"]
 collision_layer = 2
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/YSort2/Bridge/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bridge/Area2D"]
 position = Vector2( -8, -197 )
 shape = SubResource( 199 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="YSort/YSort2/Bridge/Area2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="YSort/Bridge/Area2D"]
 position = Vector2( 16, -258 )
 shape = SubResource( 201 )
 
@@ -1438,40 +1436,42 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 18
+frame = 20
 playing = true
 
-[node name="Player" parent="YSort" instance=ExtResource( 2 )]
+[node name="gobbar" type="YSort" parent="YSort"]
+
+[node name="Player" parent="YSort/gobbar" instance=ExtResource( 2 )]
 position = Vector2( 153, 61 )
 collision_layer = 131
 collision_mask = 131
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
-remote_path = NodePath("../../../Camera2D")
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/gobbar/Player"]
+remote_path = NodePath("../../../../Camera2D")
 
-[node name="Bat" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 173, 125 )
-
-[node name="Bat2" parent="YSort" instance=ExtResource( 10 )]
-position = Vector2( 58, 107 )
-
-[node name="Bat3" parent="YSort" instance=ExtResource( 10 )]
+[node name="Bat3" parent="YSort/gobbar" instance=ExtResource( 10 )]
 position = Vector2( 224, 17 )
 
-[node name="Bat4" parent="YSort" instance=ExtResource( 10 )]
+[node name="Bat4" parent="YSort/gobbar" instance=ExtResource( 10 )]
 position = Vector2( 285, 230 )
 
-[node name="Bat5" parent="YSort" instance=ExtResource( 10 )]
+[node name="Bat5" parent="YSort/gobbar" instance=ExtResource( 10 )]
 position = Vector2( 31, -133 )
 
-[node name="Bat6" parent="YSort" instance=ExtResource( 10 )]
+[node name="Bat6" parent="YSort/gobbar" instance=ExtResource( 10 )]
 position = Vector2( 349, 60 )
+
+[node name="Bat" parent="YSort/gobbar" instance=ExtResource( 10 )]
+position = Vector2( 173, 125 )
+
+[node name="Bat2" parent="YSort/gobbar" instance=ExtResource( 10 )]
+position = Vector2( 58, 107 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 position = Vector2( 1, 0 )
 
 [node name="StaticBody2D5" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 263, 16 )
+position = Vector2( 271, 48 )
 
 [node name="StaticBody2D3" parent="YSort/Bushes" instance=ExtResource( 1 )]
 position = Vector2( 304, 112 )
@@ -1561,5 +1561,5 @@ margin_bottom = 19.0
 [node name="PauseMenu" parent="CanvasLayer2" instance=ExtResource( 17 )]
 visible = false
 
-[connection signal="body_entered" from="YSort/YSort2/Bridge/Area2D" to="YSort/YSort2/Bridge" method="_on_Area2D_body_entered"]
-[connection signal="body_exited" from="YSort/YSort2/Bridge/Area2D" to="YSort/YSort2/Bridge" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_exited"]
