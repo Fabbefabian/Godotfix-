@@ -29,4 +29,5 @@ func _on_Quit_pressed():
 
 
 func _on_Settings_pressed():
-	pass 
+	var _options = load("res://fdsad/Action RPG Resources/menu/Settings.tscn") .instance()
+	get_tree (). change_scene("res://fdsad/Action RPG Resources/menu/Settings.tscn")

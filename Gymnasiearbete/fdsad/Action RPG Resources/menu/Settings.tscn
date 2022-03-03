@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://fdsad/Action RPG Resources/menu/PauseMenu.gd" type="Script" id=1]
+[ext_resource path="res://fdsad/Action RPG Resources/menu/Settings.gd" type="Script" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=2]
 
 [sub_resource type="DynamicFont" id=3]
@@ -58,7 +58,7 @@ Button/styles/pressed = SubResource( 13 )
 size = 8
 font_data = ExtResource( 2 )
 
-[node name="PauseMenu" type="Control"]
+[node name="Settings" type="Control"]
 pause_mode = 2
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -96,35 +96,35 @@ margin_top = 32.0
 margin_right = 72.0
 margin_bottom = 32.0
 
-[node name="Resume" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Fullscreen" type="Button" parent="CenterContainer/VBoxContainer"]
 margin_top = 42.0
 margin_right = 72.0
 margin_bottom = 53.0
-focus_neighbour_top = NodePath("../Quit")
+focus_neighbour_top = NodePath("../Go back")
 theme = SubResource( 5 )
 custom_fonts/font = SubResource( 1 )
-text = "Resume"
+text = "Fullscreen"
 
-[node name="Settings" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="KeyBinds" type="Button" parent="CenterContainer/VBoxContainer"]
 margin_top = 63.0
 margin_right = 72.0
 margin_bottom = 74.0
 theme = SubResource( 5 )
 custom_fonts/font = SubResource( 1 )
-text = "Settings"
+text = "Keybindings"
 
-[node name="Quit" type="Button" parent="CenterContainer/VBoxContainer"]
+[node name="Go back" type="Button" parent="CenterContainer/VBoxContainer"]
 margin_top = 84.0
 margin_right = 72.0
 margin_bottom = 95.0
-focus_neighbour_bottom = NodePath("../Resume")
+focus_neighbour_bottom = NodePath("../Fullscreen")
 theme = SubResource( 7 )
 custom_fonts/font = SubResource( 2 )
-text = "Quit"
+text = "Go Back"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Resume" to="." method="_on_Resume_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Settings" to="." method="_on_Settings_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Fullscreen" to="." method="_on_Fullscreen_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/KeyBinds" to="." method="_on_KeyBinds_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Go back" to="." method="_on_Go_back_pressed"]

@@ -131,9 +131,6 @@ margin_right = -1.0
 size_flags_stretch_ratio = 0.0
 theme = SubResource( 6 )
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 visible = false
@@ -141,11 +138,11 @@ position = Vector2( 161, 90 )
 scale = Vector2( 0.592593, 0.542169 )
 frames = SubResource( 30 )
 animation = "Start"
-frame = 6
+frame = 7
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 161.5, 90 )
+position = Vector2( 161, 90 )
 scale = Vector2( 0.167188, 0.166667 )
 texture = ExtResource( 2 )
 
