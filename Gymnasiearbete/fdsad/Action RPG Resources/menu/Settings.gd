@@ -9,7 +9,7 @@ func _on_Fullscreen_pressed():
 
 
 func _on_KeyBinds_pressed():
-	pass # Replace with function body.
+	pass 
 
 
 func _on_Go_back_pressed():
