@@ -201,8 +201,8 @@ __meta__ = {
 }
 
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Resume" to="." method="_on_Resume_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/New" to="." method="_on_Quit_pressed"]
-[connection signal="pressed" from="CenterContainer/VBoxContainer/Load" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/New" to="." method="_on_New_pressed"]
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Load" to="." method="_on_Load_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Settings" to="." method="_on_Settings_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Quit" to="." method="_on_Quit_pressed"]
 [connection signal="pressed" from="CenterContainer/VBoxContainer3/Fullscreen" to="." method="_on_Fullscreen_pressed"]

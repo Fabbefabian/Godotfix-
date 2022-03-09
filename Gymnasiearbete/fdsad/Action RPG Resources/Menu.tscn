@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/Menu.gd" type="Script" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/menu/wp1933961.png" type="Texture" id=2]
@@ -123,6 +123,10 @@ font_data = ExtResource( 4 )
 size = 8
 font_data = ExtResource( 4 )
 
+[sub_resource type="DynamicFont" id=44]
+size = 12
+font_data = ExtResource( 4 )
+
 [node name="Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -137,7 +141,6 @@ position = Vector2( 161, 90 )
 scale = Vector2( 0.592593, 0.542169 )
 frames = SubResource( 30 )
 animation = "Start"
-frame = 10
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -218,6 +221,14 @@ margin_bottom = 51.0
 focus_neighbour_bottom = NodePath("../Fullscreen")
 custom_fonts/font = SubResource( 13 )
 text = "Go Back"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 22.0
+margin_top = 94.0
+margin_right = 157.0
+margin_bottom = 111.0
+custom_fonts/font = SubResource( 44 )
+text = "Manges Adventure"
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_Options_pressed"]

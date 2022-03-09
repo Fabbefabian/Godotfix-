@@ -1,12 +1,13 @@
 extends CanvasModulate
 
 
-func _process(delta):
-	var time = OS.get_time()
-	var TimeInSeconds= time.hour * 1800 + time.minute * 25 + time.second
-	var CurrentFrame = range_lerp(TimeInSeconds,0,360,0,12)
-	$AnimationPlayer.play("Day_night_cycle")
-	$AnimationPlayer.seek(CurrentFrame)
+const Night_Color = Color ("#2a2a31")
+const Day_Color = Color ("#ffffff")
+const Time_Scale = 0.1
 
+var time = 0
 
+func _process(delta: float) -> void:
+	self.time += delta * Time_Scale
+	self.color = Day_Color.linear_interpolate(Night_Color, abs (sin(time)))
 

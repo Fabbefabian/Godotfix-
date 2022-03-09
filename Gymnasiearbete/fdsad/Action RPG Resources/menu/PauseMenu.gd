@@ -3,7 +3,7 @@ extends Control
 
 var is_paused = false setget set_is_paused
 
-func set_is_paused(value):
+func set_is_paused(_value):
 	get_tree().paused = true
 	
 	
@@ -49,3 +49,12 @@ func _on_Keybinds_pressed():
 func _on_Back_pressed():
 	$CenterContainer/VBoxContainer3.visible=false
 	$CenterContainer/VBoxContainer.visible=true
+
+
+func _on_Load_pressed():
+	pass # Replace with function body.
+
+
+func _on_New_pressed():
+	#get_tree(). change_scene("res://fdsad/Action RPG Resources/World.tscn")
+	pass
