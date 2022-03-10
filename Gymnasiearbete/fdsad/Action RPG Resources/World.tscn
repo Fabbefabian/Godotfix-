@@ -1403,7 +1403,7 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 15
+frame = 18
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
@@ -1504,7 +1504,7 @@ position = Vector2( 76, 6 )
 [node name="Hus" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 313, 37 )
 
-[node name="CanvasModulate" type="CanvasModulate" parent="."]
+[node name="dagnatt" type="CanvasModulate" parent="."]
 light_mask = 0
 position = Vector2( 197, 34 )
 color = Color( 0.105882, 0.105882, 0.117647, 1 )
