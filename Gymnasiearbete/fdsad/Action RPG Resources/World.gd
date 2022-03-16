@@ -1,6 +1,6 @@
 extends Node2D
 
-
+#detta script 
 
 onready var WaterCliffs = get_node("WaterCliffs")
 

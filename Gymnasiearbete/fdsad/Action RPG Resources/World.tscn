@@ -1622,7 +1622,11 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
+<<<<<<< Updated upstream
 frame = 5
+=======
+frame = 12
+>>>>>>> Stashed changes
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
