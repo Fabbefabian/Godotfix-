@@ -8,9 +8,6 @@
 margin_right = 57.0
 margin_bottom = 11.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="HeartUIEmpty" type="TextureRect" parent="."]
 margin_right = 57.0
@@ -27,6 +24,3 @@ margin_bottom = 11.0
 texture = ExtResource( 2 )
 expand = true
 stretch_mode = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}

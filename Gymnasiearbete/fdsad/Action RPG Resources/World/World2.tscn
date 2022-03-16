@@ -1,4 +1,4 @@
-[gd_scene load_steps=137 format=2]
+[gd_scene load_steps=139 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/GrassHills.png" type="Texture" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,8 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/CliffTileset.png" type="Texture" id=11]
 [ext_resource path="res://fdsad/Action RPG Resources/Bridge.gd" type="Script" id=12]
 [ext_resource path="res://fdsad/Action RPG Resources/World/World2.gd" type="Script" id=13]
+[ext_resource path="res://fdsad/Action RPG Resources/Player/Camera.tscn" type="PackedScene" id=14]
+[ext_resource path="res://fdsad/Action RPG Resources/Tp.tscn" type="PackedScene" id=15]
 
 [sub_resource type="ConvexPolygonShape2D" id=145]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1175,7 +1177,7 @@ tile_data = PoolIntArray( 1048573, 0, 7, 1048574, 0, 196612, 1048575, 0, 196612,
 tile_set = SubResource( 200 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( 1245189, 0, 7, 1245190, 0, 196612, 1245191, 0, 131081, 1245192, 0, 131081, 1245193, 0, 196612, 1245194, 0, 131081, 1245195, 0, 131081, 1245196, 0, 8, 1310725, 0, 131076, 1310726, 0, 131078, 1310727, 0, 262153, 1310728, 0, 262153, 1310729, 0, 131078, 1310730, 0, 131078, 1310731, 0, 262153, 1310732, 0, 131077, 1376261, 0, 65545, 1376262, 0, 327688, 1376263, 0, 327689, 1376264, 0, 327689, 1376265, 0, 262153, 1376266, 0, 131078, 1376267, 0, 131078, 1376268, 0, 9, 1441797, 0, 65545, 1441798, 0, 262153, 1441799, 0, 327689, 1441800, 0, 262153, 1441801, 0, 327688, 1441802, 0, 327689, 1441803, 0, 262153, 1441804, 0, 9, 1507333, 0, 65543, 1507334, 0, 196617, 1507335, 0, 196613, 1507336, 0, 196613, 1507337, 0, 196613, 1507338, 0, 196617, 1507339, 0, 196617, 1507340, 0, 65544 )
+tile_data = PoolIntArray( 1245189, 0, 7, 1245190, 0, 196612, 1245191, 0, 131081, 1245192, 0, 131081, 1245193, 0, 196612, 1245194, 0, 131081, 1245195, 0, 131081, 1245196, 0, 8, 1310725, 0, 131076, 1310726, 0, 131078, 1310727, 0, 262153, 1310728, 0, 262153, 1310729, 0, 131078, 1310730, 0, 131078, 1310731, 0, 262153, 1310732, 0, 131077, 1376261, 0, 65545, 1376262, 0, 327688, 1376263, 0, 327689, 1376264, 0, 327689, 1376265, 0, 262153, 1376266, 0, 131078, 1376267, 0, 131078, 1376268, 0, 9, 1441797, 0, 65545, 1441798, 0, 262153, 1441799, 0, 327689, 1441800, 0, 262153, 1441801, 0, 327688, 1441802, 0, 327689, 1441803, 0, 262153, 1441804, 0, 9, 1507333, 0, 65545, 1507334, 0, 262153, 1507335, 0, 327688, 1507336, 0, 327688, 1507337, 0, 327688, 1507338, 0, 262153, 1507339, 0, 327688, 1507340, 0, 131077, 1572869, 0, 65545, 1572870, 0, 262153, 1572871, 0, 327688, 1572872, 0, 327689, 1572873, 0, 327689, 1572874, 0, 131078, 1572875, 0, 131078, 1572876, 0, 131077, 1638405, 0, 65543, 1638406, 0, 196617, 1638407, 0, 196617, 1638408, 0, 196613, 1638409, 0, 196613, 1638410, 0, 196617, 1638411, 0, 196617, 1638412, 0, 65544 )
 
 [node name="GrassFunkar" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
@@ -1207,10 +1209,14 @@ position = Vector2( 161, 70 )
 scale = Vector2( 9.125, 5.625 )
 region_rect = Rect2( -226, -87, 550, 210 )
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" parent="." instance=ExtResource( 14 )]
 position = Vector2( 137, 365 )
-current = true
-zoom = Vector2( 1.2, 1.2 )
+
+[node name="TopLeft" parent="Camera2D/Limits" index="0"]
+position = Vector2( -120, -62 )
+
+[node name="BottomRight" parent="Camera2D/Limits" index="1"]
+position = Vector2( 438, 379 )
 
 [node name="YSort" type="YSort" parent="."]
 
@@ -1255,7 +1261,7 @@ position = Vector2( 136, 277 )
 shape = SubResource( 211 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="YSort/Bridge/Area2D"]
-position = Vector2( 16, -305.625 )
+position = Vector2( 16, -302 )
 shape = SubResource( 212 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
@@ -1275,7 +1281,7 @@ remote_path = NodePath("../../../Camera2D")
 position = Vector2( 224, 17 )
 
 [node name="Bat4" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( -17, -7 )
+position = Vector2( -52, 68 )
 
 [node name="Bat6" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 319, 129 )
@@ -1303,9 +1309,16 @@ margin_top = 8.0
 margin_right = 65.0
 margin_bottom = 19.0
 
+[node name="Tp" parent="." instance=ExtResource( 15 )]
+
+[node name="CollisionShape2D" parent="Tp" index="1"]
+position = Vector2( 143, 392 )
+
 [connection signal="body_entered" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_exited"]
 
+[editable path="Camera2D"]
 [editable path="YSort/Player"]
 [editable path="YSort/Player/HitboxPivot/SwordHitbox"]
 [editable path="YSort/Player/Hurtbox"]
+[editable path="Tp"]
