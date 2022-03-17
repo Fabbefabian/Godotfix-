@@ -19,7 +19,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/menu/PauseMenu.tscn" type="PackedScene" id=17]
 [ext_resource path="res://fdsad/Action RPG Resources/Bridge.gd" type="Script" id=18]
 [ext_resource path="res://fdsad/Action RPG Resources/World.gd" type="Script" id=19]
-[ext_resource path="res://fdsad/Action RPG Resources/Tp.tscn" type="PackedScene" id=20]
+[ext_resource path="res://fdsad/Action RPG Resources/Teleport/Tp.tscn" type="PackedScene" id=20]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Camera.tscn" type="PackedScene" id=21]
 
 [sub_resource type="ConvexPolygonShape2D" id=210]
@@ -1093,7 +1093,7 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 24
+frame = 3
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
@@ -1277,4 +1277,3 @@ visible = false
 [editable path="YSort/gobbar/Player"]
 [editable path="YSort/gobbar/Player/HitboxPivot/SwordHitbox"]
 [editable path="YSort/gobbar/Player/Hurtbox"]
-[editable path="Tp"]

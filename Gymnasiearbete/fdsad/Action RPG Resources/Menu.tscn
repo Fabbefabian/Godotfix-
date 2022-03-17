@@ -141,7 +141,7 @@ position = Vector2( 161, 90 )
 scale = Vector2( 0.592593, 0.542169 )
 frames = SubResource( 30 )
 animation = "Start"
-frame = 9
+frame = 5
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -231,7 +231,7 @@ margin_bottom = 111.0
 custom_fonts/font = SubResource( 44 )
 text = "Manges Adventure"
 
-[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/Options" to="." method="_on_Options_pressed"]
 [connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_QuitButton_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Fullscreen" to="." method="_on_Fullscreen_pressed"]

@@ -4,8 +4,8 @@ func _ready():
 	$VBoxContainer/StartButton.grab_focus()
 
 
-func _on_Button_pressed():
-	get_tree(). change_scene("res://fdsad/Action RPG Resources/World.tscn")
+
+
 
 
 func _on_QuitButton_pressed():
@@ -30,3 +30,7 @@ func _on_Keybinds_pressed():
 func _on_Goback_pressed():
 	$VBoxContainer2.visible=false
 	$VBoxContainer.visible=true
+
+
+func _on_StartButton_pressed():
+	get_tree(). change_scene("res://fdsad/Action RPG Resources/World.tscn")

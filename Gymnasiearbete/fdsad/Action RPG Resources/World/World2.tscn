@@ -1,4 +1,4 @@
-[gd_scene load_steps=139 format=2]
+[gd_scene load_steps=138 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/GrassHills.png" type="Texture" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -14,7 +14,6 @@
 [ext_resource path="res://fdsad/Action RPG Resources/Bridge.gd" type="Script" id=12]
 [ext_resource path="res://fdsad/Action RPG Resources/World/World2.gd" type="Script" id=13]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Camera.tscn" type="PackedScene" id=14]
-[ext_resource path="res://fdsad/Action RPG Resources/Tp.tscn" type="PackedScene" id=15]
 
 [sub_resource type="ConvexPolygonShape2D" id=145]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1147,8 +1146,8 @@ a = Vector2( 0, -164 )
 b = Vector2( 1, 14 )
 
 [sub_resource type="SegmentShape2D" id=208]
-a = Vector2( 7, -164 )
-b = Vector2( 7, 17 )
+a = Vector2( 6, -103 )
+b = Vector2( 6, 0 )
 
 [sub_resource type="RectangleShape2D" id=209]
 extents = Vector2( 0, 30 )
@@ -1213,7 +1212,7 @@ region_rect = Rect2( -226, -87, 550, 210 )
 position = Vector2( 137, 365 )
 
 [node name="TopLeft" parent="Camera2D/Limits" index="0"]
-position = Vector2( -120, -62 )
+position = Vector2( -238, -284 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
 position = Vector2( 438, 379 )
@@ -1241,7 +1240,7 @@ position = Vector2( -45, -232 )
 shape = SubResource( 207 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bridge"]
-position = Vector2( 70, -233 )
+position = Vector2( 200, 409 )
 shape = SubResource( 208 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="YSort/Bridge"]
@@ -1261,7 +1260,7 @@ position = Vector2( 136, 277 )
 shape = SubResource( 211 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="YSort/Bridge/Area2D"]
-position = Vector2( 16, -302 )
+position = Vector2( 548, -321 )
 shape = SubResource( 212 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
@@ -1309,11 +1308,6 @@ margin_top = 8.0
 margin_right = 65.0
 margin_bottom = 19.0
 
-[node name="Tp" parent="." instance=ExtResource( 15 )]
-
-[node name="CollisionShape2D" parent="Tp" index="1"]
-position = Vector2( 143, 392 )
-
 [connection signal="body_entered" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_exited"]
 
@@ -1321,4 +1315,3 @@ position = Vector2( 143, 392 )
 [editable path="YSort/Player"]
 [editable path="YSort/Player/HitboxPivot/SwordHitbox"]
 [editable path="YSort/Player/Hurtbox"]
-[editable path="Tp"]
