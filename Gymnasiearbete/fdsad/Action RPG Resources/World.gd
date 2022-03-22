@@ -4,6 +4,7 @@ extends Node2D
 
 onready var WaterCliffs = get_node("WaterCliffs")
 
+
 func _ready():
 	for bridge in get_tree().get_nodes_in_group("Bridges"):
 		bridge.connect("TurnOffWaterCliffs", self, "TurnOffWaterCliffs" )
