@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World.gd" type="Script" id=19]
 [ext_resource path="res://fdsad/Action RPG Resources/Teleport/Tp.tscn" type="PackedScene" id=20]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Camera.tscn" type="PackedScene" id=21]
+[ext_resource path="res://fdsad/Action RPG Resources/Teleport/HusTp.tscn" type="PackedScene" id=22]
 
 [sub_resource type="ConvexPolygonShape2D" id=210]
 points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
@@ -1093,7 +1094,7 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 13
+frame = 11
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
@@ -1138,7 +1139,7 @@ position = Vector2( 304, 112 )
 position = Vector2( 80, 64 )
 
 [node name="StaticBody2D4" parent="YSort/Bushes" instance=ExtResource( 1 )]
-position = Vector2( 160, 16 )
+position = Vector2( 164, 23 )
 
 [node name="StaticBody2D" parent="YSort/Bushes" instance=ExtResource( 1 )]
 position = Vector2( 160, 137 )
@@ -1270,6 +1271,11 @@ visible = false
 
 [node name="Tp" parent="." instance=ExtResource( 20 )]
 
+[node name="Hus" parent="." instance=ExtResource( 22 )]
+
+[node name="CollisionShape2D" parent="Hus" index="0"]
+position = Vector2( 318, 51 )
+
 [connection signal="body_entered" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_exited"]
 
@@ -1277,3 +1283,4 @@ visible = false
 [editable path="YSort/gobbar/Player"]
 [editable path="YSort/gobbar/Player/HitboxPivot/SwordHitbox"]
 [editable path="YSort/gobbar/Player/Hurtbox"]
+[editable path="Hus"]

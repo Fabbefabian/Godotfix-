@@ -1,3 +1,10 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://fdsad/Action RPG Resources/World/Pixel_Interiors/Bench.png" type="Texture" id=1]
 
 [node name="HUsinterior" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 103.129, 80.5 )
+scale = Vector2( 0.515545, 0.338235 )
+texture = ExtResource( 1 )
