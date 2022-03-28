@@ -1,10 +1,10 @@
 extends Node2D
 
 
-
+#den hämta noden watercliffs
 onready var WaterCliffs = get_node("WaterCliffs")
 
-
+#den hämtar gruppen bridges och kopplar den till funktionerna
 func _ready():
 	for bridge in get_tree().get_nodes_in_group("Bridges"):
 		bridge.connect("TurnOffWaterCliffs", self, "TurnOffWaterCliffs" )

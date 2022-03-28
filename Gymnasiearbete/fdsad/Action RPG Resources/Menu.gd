@@ -34,3 +34,6 @@ func _on_Goback_pressed():
 
 func _on_StartButton_pressed():
 	get_tree(). change_scene("res://fdsad/Action RPG Resources/World.tscn")
+	DayNightCycle.Start = true
+	
+

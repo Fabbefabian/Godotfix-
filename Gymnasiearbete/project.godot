@@ -21,6 +21,7 @@ IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
 UserData="*res://addons/github-integration/scripts/user_data.gd"
 RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 PlayerStats="*res://fdsad/Action RPG Resources/Player/PlayerStats.tscn"
+DayNightCycle="*res://fdsad/Action RPG Resources/Day_night_cycle.gd"
 
 [display]
 

@@ -14,9 +14,9 @@ enum{
 	CHASE
 	
 }
-
+#hur snabba de är och vector2.zero gör att den börjar med att stå still och rör sig först när man trycker en knapp
 var velocity = Vector2.ZERO
-
+#gör en knockback, att det åker tillbaka när man slår dem
 var knockback = Vector2.ZERO
 
 var state = CHASE
@@ -76,7 +76,7 @@ func pick_random_state(state_list):
 	state_list.shuffle()
 	return state_list.pop_front()
 
-
+#när man slår de så blir där en effect och hur långt back de ska flyga när man slår
 func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage
 	knockback = area.knockback_vector * 130
