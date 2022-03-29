@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/Grass.tscn" type="PackedScene" id=6]
 [ext_resource path="res://fdsad/Action RPG Resources/Hus.tscn" type="PackedScene" id=7]
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/GrassHills.png" type="Texture" id=8]
+[ext_resource path="res://fdsad/Action RPG Resources/Enemies/Filip.tscn" type="PackedScene" id=9]
 [ext_resource path="res://fdsad/Action RPG Resources/Enemies/Bat.tscn" type="PackedScene" id=10]
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/Lake_Tileset.png" type="Texture" id=11]
 [ext_resource path="res://fdsad/Action RPG Resources/World/GrassTileset/GrassHillsWater.png" type="Texture" id=12]
@@ -1125,10 +1126,13 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 12
+frame = 10
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
+
+[node name="Bat7" parent="YSort/gobbar" instance=ExtResource( 9 )]
+position = Vector2( 586, 55 )
 
 [node name="Player" parent="YSort/gobbar" instance=ExtResource( 2 )]
 position = Vector2( 147, 81 )

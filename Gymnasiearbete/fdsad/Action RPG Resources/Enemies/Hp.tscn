@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://fdsad/Action RPG Resources/Fonts/Minecraftia-Regular.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 1, 0.0117647, 0.0117647, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.223529, 0.941176, 0.0745098, 1 )
+border_color = Color( 1, 0, 0, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color( 1, 0, 0, 0 )
+
+[sub_resource type="Theme" id=15]
+ProgressBar/styles/bg = SubResource( 13 )
+ProgressBar/styles/fg = SubResource( 14 )
+
+[sub_resource type="DynamicFont" id=16]
+size = 8
+font_data = ExtResource( 2 )
+
+[node name="Hp" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="HealthOver" type="ProgressBar" parent="."]
+margin_left = -18.0
+margin_top = -36.0
+margin_right = 19.0
+margin_bottom = -25.0
+theme = SubResource( 15 )
+custom_fonts/font = SubResource( 16 )
+step = 50.0
+value = 100.0

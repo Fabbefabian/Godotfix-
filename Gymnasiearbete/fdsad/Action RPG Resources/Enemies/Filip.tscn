@@ -1,6 +1,6 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=18 format=2]
 
-[ext_resource path="res://fdsad/Action RPG Resources/Enemies/Bat.png" type="Texture" id=1]
+[ext_resource path="res://fdsad/Action RPG Resources/Enemies/Filip1.png" type="Texture" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Shadows/SmallShadow.png" type="Texture" id=2]
 [ext_resource path="res://fdsad/Action RPG Resources/Hit and hurtboxes/Hurtbox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://fdsad/Action RPG Resources/Enemies/Bat.gd" type="Script" id=4]
@@ -11,34 +11,9 @@
 [ext_resource path="res://fdsad/Action RPG Resources/Player/WanderControll.tscn" type="PackedScene" id=9]
 [ext_resource path="res://fdsad/Action RPG Resources/Enemies/Hp.tscn" type="PackedScene" id=10]
 
-[sub_resource type="AtlasTexture" id=1]
-flags = 8
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 16, 24 )
-
-[sub_resource type="AtlasTexture" id=2]
-flags = 8
-atlas = ExtResource( 1 )
-region = Rect2( 16, 0, 16, 24 )
-
-[sub_resource type="AtlasTexture" id=3]
-flags = 8
-atlas = ExtResource( 1 )
-region = Rect2( 32, 0, 16, 24 )
-
-[sub_resource type="AtlasTexture" id=4]
-flags = 8
-atlas = ExtResource( 1 )
-region = Rect2( 48, 0, 16, 24 )
-
-[sub_resource type="AtlasTexture" id=5]
-flags = 8
-atlas = ExtResource( 1 )
-region = Rect2( 64, 0, 16, 24 )
-
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ) ],
+"frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "Fly",
 "speed": 10.0
@@ -64,14 +39,13 @@ height = 10.0
 [sub_resource type="CircleShape2D" id=11]
 radius = 3.0
 
-[node name="Bat" type="KinematicBody2D"]
+[node name="Flilip" type="KinematicBody2D"]
 collision_layer = 16
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 1
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -118,14 +92,14 @@ visible = false
 [node name="CollisionShape2D" parent="SoftCollision" index="0"]
 shape = SubResource( 11 )
 
-[node name="WanderControll" parent="." instance=ExtResource( 9 )]
-
 [node name="Hp" parent="." instance=ExtResource( 10 )]
 
 [node name="HealthOver" parent="Hp" index="0"]
 max_value = 2.0
 step = 1.0
 value = 2.0
+
+[node name="WanderControll" parent="." instance=ExtResource( 9 )]
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
