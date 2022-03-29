@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=56 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://fdsad/Action RPG Resources/Hit and hurtboxes/Hurtbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://fdsad/Action RPG Resources/Shadows/MediumShadow.png" type="Texture" id=6]
 [ext_resource path="res://fdsad/Action RPG Resources/Effects/light.png" type="Texture" id=7]
-[ext_resource path="res://fdsad/Action RPG Resources/Day_night_cycle.gd" type="Script" id=8]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 4.0
@@ -745,12 +744,6 @@ texture_scale = 0.6
 energy = 0.6
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
-
-[node name="dagnatt" type="CanvasModulate" parent="."]
-light_mask = 0
-position = Vector2( 197, 34 )
-color = Color( 0.984314, 0.984314, 0.984314, 1 )
-script = ExtResource( 8 )
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 
