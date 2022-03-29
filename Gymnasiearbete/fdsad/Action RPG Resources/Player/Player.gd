@@ -114,8 +114,8 @@ func attack_animation_finished():
 	state = MOVE
 
 
-func _on_Hurtbox_area_entered(_area):
+func _on_Hurtbox_area_entered(area):
 	if hurtbox.invincible == false:" conditional"
-	stats.health -= 1
+	stats.health -= area.damage
 	hurtbox.start_invincibility(0.5)
 	hurtbox.create_hit_effect()
