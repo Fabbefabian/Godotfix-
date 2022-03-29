@@ -1126,7 +1126,7 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 10
+frame = 11
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
