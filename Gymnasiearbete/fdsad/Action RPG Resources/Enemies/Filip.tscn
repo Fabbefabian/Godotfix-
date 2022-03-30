@@ -62,13 +62,14 @@ radius = 3.0
 [node name="Flilip" type="KinematicBody2D"]
 collision_layer = 16
 script = ExtResource( 4 )
+MAX_SPEED = 100
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 3.5, 0 )
 scale = Vector2( 1.14, 1 )
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 2
+frame = 1
 playing = true
 offset = Vector2( 0, -12 )
 

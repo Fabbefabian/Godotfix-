@@ -1205,7 +1205,7 @@ format = 1
 tile_data = PoolIntArray( 983048, 0, 3, 1048584, 0, 65539, 1114120, 0, 65539, 1179656, 0, 65539, 1245192, 0, 131075 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 161, 70 )
+position = Vector2( 603, 125 )
 scale = Vector2( 9.125, 5.625 )
 region_rect = Rect2( -226, -87, 550, 210 )
 

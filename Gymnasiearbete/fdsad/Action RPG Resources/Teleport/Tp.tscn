@@ -3,15 +3,21 @@
 [ext_resource path="res://fdsad/Action RPG Resources/Tp.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=207]
-extents = Vector2( 63, 3 )
+extents = Vector2( 61, 10 )
 
 [node name="Tp" type="Area2D"]
+position = Vector2( 163, 234 )
+collision_layer = 0
+collision_mask = 0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 13, -392 )
+position = Vector2( 7, 2 )
 shape = SubResource( 207 )
 
 [connection signal="body_entered" from="." to="." method="_on_Tp_body_entered"]
