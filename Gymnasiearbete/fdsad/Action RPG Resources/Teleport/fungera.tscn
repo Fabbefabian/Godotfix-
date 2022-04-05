@@ -3,10 +3,9 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/tptill1.gd" type="Script" id=1]
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 62, 9 )
+extents = Vector2( 4, 9.5 )
 
 [node name="Area2D" type="Area2D"]
-collision_layer = 64
 collision_mask = 2
 script = ExtResource( 1 )
 

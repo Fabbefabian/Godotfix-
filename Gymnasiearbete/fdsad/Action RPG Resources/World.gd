@@ -9,6 +9,12 @@ func _ready():
 	for bridge in get_tree().get_nodes_in_group("Bridges"):
 		bridge.connect("TurnOffWaterCliffs", self, "TurnOffWaterCliffs" )
 		bridge.connect("TurnOnWaterCliffs", self, "TurnOnWaterCliffs" )
+	print(Global.door_name)
+	
+	if Global.door_name:
+		var door_node = find_node(Global.door_name)
+		if door_node:
+			$Player.global_position = door_node.global_position
 
 
 func TurnOffWaterCliffs():

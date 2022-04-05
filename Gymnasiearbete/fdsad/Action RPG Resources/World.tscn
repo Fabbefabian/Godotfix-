@@ -1074,7 +1074,7 @@ position = Vector2( 147, 81 )
 position = Vector2( -497, -400 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
-position = Vector2( 629, 365 )
+position = Vector2( 647, 377 )
 
 [node name="YSort" type="YSort" parent="."]
 
@@ -1126,7 +1126,7 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 4
+frame = 13
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
@@ -1135,7 +1135,7 @@ playing = true
 position = Vector2( -426, -85 )
 
 [node name="AnimatedSprite" parent="YSort/gobbar/Filip" index="0"]
-frame = 2
+frame = 3
 
 [node name="Mange" parent="YSort/gobbar" instance=ExtResource( 2 )]
 position = Vector2( 147, 81 )
@@ -1469,7 +1469,7 @@ position = Vector2( 476, 40 )
 position = Vector2( -5, 25 )
 
 [node name="CollisionShape2D" parent="YSort/Hus/Area2D" index="0"]
-position = Vector2( 10, -11 )
+position = Vector2( 61, -12 )
 
 [node name="Hp" type="CanvasLayer" parent="."]
 
@@ -1494,6 +1494,15 @@ vframes = 3
 [node name="door" parent="." instance=ExtResource( 20 )]
 target_scene = "res://fdsad/Action RPG Resources/Hus.tscn"
 
+[node name="CollisionShape2D" parent="door" index="0"]
+position = Vector2( 481, 54.5 )
+
+[node name="door2" parent="." instance=ExtResource( 20 )]
+target_scene = "res://fdsad/Action RPG Resources/Hus.tscn"
+
+[node name="CollisionShape2D" parent="door2" index="0"]
+position = Vector2( 17, -389 )
+
 [connection signal="body_entered" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_exited"]
 
@@ -1509,3 +1518,4 @@ target_scene = "res://fdsad/Action RPG Resources/Hus.tscn"
 [editable path="YSort/gobbar/Mange/Hurtbox"]
 [editable path="YSort/Hus"]
 [editable path="door"]
+[editable path="door2"]
