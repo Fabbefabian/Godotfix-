@@ -1,4 +1,4 @@
-[gd_scene load_steps=70 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/busch.tscn" type="PackedScene" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -19,7 +19,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/menu/PauseMenu.tscn" type="PackedScene" id=17]
 [ext_resource path="res://fdsad/Action RPG Resources/Bridge.gd" type="Script" id=18]
 [ext_resource path="res://fdsad/Action RPG Resources/World.gd" type="Script" id=19]
-[ext_resource path="res://fdsad/Action RPG Resources/Tp.gd" type="Script" id=20]
+[ext_resource path="res://fdsad/Action RPG Resources/Teleport/fungera.tscn" type="PackedScene" id=20]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Camera.tscn" type="PackedScene" id=21]
 [ext_resource path="res://fdsad/Action RPG Resources/World/tf_jungle/tf_jungle_tileset.png" type="Texture" id=22]
 [ext_resource path="res://fdsad/Action RPG Resources/piCTURE/nedladdning.png" type="Texture" id=23]
@@ -1015,9 +1015,6 @@ animations = [ {
 
 [sub_resource type="AnimationNodeStateMachinePlayback" id=213]
 
-[sub_resource type="RectangleShape2D" id=215]
-extents = Vector2( 60, 10 )
-
 [node name="World" type="Node2D"]
 script = ExtResource( 19 )
 
@@ -1129,7 +1126,7 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 14
+frame = 4
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
@@ -1138,7 +1135,7 @@ playing = true
 position = Vector2( -426, -85 )
 
 [node name="AnimatedSprite" parent="YSort/gobbar/Filip" index="0"]
-frame = 3
+frame = 2
 
 [node name="Mange" parent="YSort/gobbar" instance=ExtResource( 2 )]
 position = Vector2( 147, 81 )
@@ -1162,10 +1159,10 @@ position = Vector2( 31, -133 )
 position = Vector2( 349, 60 )
 
 [node name="Bat" parent="YSort/gobbar" instance=ExtResource( 10 )]
-position = Vector2( 182, 119 )
+position = Vector2( 171, 171 )
 
 [node name="Bat2" parent="YSort/gobbar" instance=ExtResource( 10 )]
-position = Vector2( 58, 107 )
+position = Vector2( 43, 81 )
 
 [node name="Bushes" type="YSort" parent="YSort"]
 position = Vector2( 1, 0 )
@@ -1494,18 +1491,11 @@ texture = ExtResource( 23 )
 hframes = 5
 vframes = 3
 
-[node name="Area2D" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 2
-script = ExtResource( 20 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 16, -388 )
-shape = SubResource( 215 )
+[node name="door" parent="." instance=ExtResource( 20 )]
+target_scene = "res://fdsad/Action RPG Resources/Hus.tscn"
 
 [connection signal="body_entered" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="YSort/Bridge/Area2D" to="YSort/Bridge" method="_on_Area2D_body_exited"]
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 
 [editable path="Camera2D"]
 [editable path="YSort/gobbar/Filip"]
@@ -1518,3 +1508,4 @@ shape = SubResource( 215 )
 [editable path="YSort/gobbar/Mange/HitboxPivot/SwordHitbox"]
 [editable path="YSort/gobbar/Mange/Hurtbox"]
 [editable path="YSort/Hus"]
+[editable path="door"]

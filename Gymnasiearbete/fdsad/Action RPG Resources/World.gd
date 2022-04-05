@@ -19,3 +19,12 @@ func TurnOffWaterCliffs():
 func TurnOnWaterCliffs():
 	WaterCliffs.set_collision_layer_bit(0, true)
 	WaterCliffs.set_collision_mask_bit(0, true)
+
+
+func yes():
+	print(Global.door_name)
+	
+	if Global.door_name:
+		var door_node = find_node(Global.door_name)
+		if door_node:
+			$Player.global_position = door_node.global_position
