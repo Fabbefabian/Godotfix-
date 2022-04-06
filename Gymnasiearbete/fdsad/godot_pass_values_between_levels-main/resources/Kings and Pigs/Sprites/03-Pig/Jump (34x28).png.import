@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (34x28).png-61d8367ca307d963d6b19717aac0ed76.stex"
+path="res://.import/Jump (34x28).png-a4bb4fd4a86055d55c92ce1f58273f48.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/03-Pig/Jump (34x28).png"
-dest_files=[ "res://.import/Jump (34x28).png-61d8367ca307d963d6b19717aac0ed76.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/03-Pig/Jump (34x28).png"
+dest_files=[ "res://.import/Jump (34x28).png-a4bb4fd4a86055d55c92ce1f58273f48.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

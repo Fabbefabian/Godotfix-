@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Interrogation In (24x8).png-cc30301b069e6dc7c043280132f86c0f.stex"
+path="res://.import/Interrogation In (24x8).png-d2dbfbab567088ae75e241367309ed5f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Interrogation In (24x8).png"
-dest_files=[ "res://.import/Interrogation In (24x8).png-cc30301b069e6dc7c043280132f86c0f.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Interrogation In (24x8).png"
+dest_files=[ "res://.import/Interrogation In (24x8).png-d2dbfbab567088ae75e241367309ed5f.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

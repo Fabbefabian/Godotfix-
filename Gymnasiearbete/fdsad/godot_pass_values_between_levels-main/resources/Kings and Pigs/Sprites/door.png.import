@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door.png-a97410b9036ebdf638bd6b4ab7cc1964.stex"
+path="res://.import/door.png-c217e088c643f3075b384cf25094a7f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/door.png"
-dest_files=[ "res://.import/door.png-a97410b9036ebdf638bd6b4ab7cc1964.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/door.png"
+dest_files=[ "res://.import/door.png-c217e088c643f3075b384cf25094a7f9.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

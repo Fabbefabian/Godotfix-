@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WTF In (24x8).png-682665c3f8341a556ac5648e33151017.stex"
+path="res://.import/WTF In (24x8).png-0b22ccd6cd9b67cdbc4427eb075a3c05.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/WTF In (24x8).png"
-dest_files=[ "res://.import/WTF In (24x8).png-682665c3f8341a556ac5648e33151017.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/WTF In (24x8).png"
+dest_files=[ "res://.import/WTF In (24x8).png-0b22ccd6cd9b67cdbc4427eb075a3c05.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

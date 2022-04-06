@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Boom In (24x8).png-a29e1525786111918ec38b3ef3232e9a.stex"
+path="res://.import/Boom In (24x8).png-93729e71054eb538d78b9d41c9c582ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Boom In (24x8).png"
-dest_files=[ "res://.import/Boom In (24x8).png-a29e1525786111918ec38b3ef3232e9a.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Boom In (24x8).png"
+dest_files=[ "res://.import/Boom In (24x8).png-93729e71054eb538d78b9d41c9c582ea.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

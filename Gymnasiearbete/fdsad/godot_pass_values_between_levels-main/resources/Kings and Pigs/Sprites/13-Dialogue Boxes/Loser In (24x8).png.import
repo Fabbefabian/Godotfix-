@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Loser In (24x8).png-57768df324a0a43396b9cc644a4f2cb2.stex"
+path="res://.import/Loser In (24x8).png-f6b4a1be5d9eb19a5cb2f9b231e28b39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Loser In (24x8).png"
-dest_files=[ "res://.import/Loser In (24x8).png-57768df324a0a43396b9cc644a4f2cb2.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Loser In (24x8).png"
+dest_files=[ "res://.import/Loser In (24x8).png-f6b4a1be5d9eb19a5cb2f9b231e28b39.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/!!! In (24x8).png-dfd8b9dd3c41d2eeaf878ff2fe5c1139.stex"
+path="res://.import/!!! In (24x8).png-8a0b087cd17a8a089a8a55ae14e2da0b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/!!! In (24x8).png"
-dest_files=[ "res://.import/!!! In (24x8).png-dfd8b9dd3c41d2eeaf878ff2fe5c1139.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/!!! In (24x8).png"
+dest_files=[ "res://.import/!!! In (24x8).png-8a0b087cd17a8a089a8a55ae14e2da0b.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

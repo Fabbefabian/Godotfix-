@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bomb On (52x56).png-7e14c9978ed99f946e2e9f2315400bcf.stex"
+path="res://.import/Bomb On (52x56).png-9b8c8f78d31444f9f4a0212e8272c5f0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/09-Bomb/Bomb On (52x56).png"
-dest_files=[ "res://.import/Bomb On (52x56).png-7e14c9978ed99f946e2e9f2315400bcf.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/09-Bomb/Bomb On (52x56).png"
+dest_files=[ "res://.import/Bomb On (52x56).png-9b8c8f78d31444f9f4a0212e8272c5f0.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

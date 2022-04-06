@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ground (78x58).png-ed065018cc4f26c92d74d7f49530a854.stex"
+path="res://.import/Ground (78x58).png-ff6933864e86ca54c967f46308a02fad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/01-King Human/Ground (78x58).png"
-dest_files=[ "res://.import/Ground (78x58).png-ed065018cc4f26c92d74d7f49530a854.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/01-King Human/Ground (78x58).png"
+dest_files=[ "res://.import/Ground (78x58).png-ff6933864e86ca54c967f46308a02fad.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

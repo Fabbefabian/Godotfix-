@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://fdsad/Action RPG Resources/World/Pixel_Interiors/Bench.png" type="Texture" id=1]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Player.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://fdsad/Action RPG Resources/World/Pixel_Interiors/Modern tiles_Free/Interiors_free/16x16/Room_Builder_free_16x16.png" type="Texture" id=4]
 [ext_resource path="res://fdsad/Action RPG Resources/Player/Camera.tscn" type="PackedScene" id=5]
 [ext_resource path="res://fdsad/Action RPG Resources/Teleport/fungera.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/Door.tscn" type="PackedScene" id=7]
 
 [sub_resource type="TileSet" id=2]
 0/name = "Room_Builder_free_16x16.png 0"
@@ -80,6 +81,12 @@ position = Vector2( -62, -114 )
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
 position = Vector2( 347, 201 )
 
+[node name="Door" parent="." instance=ExtResource( 7 )]
+target_scene = "res://fdsad/Action RPG Resources/World.tscn"
+
+[node name="CollisionShape2D" parent="Door" index="2"]
+position = Vector2( 140, 217 )
+
 [node name="door2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 75, 159 )
 target_scene = "res://fdsad/Action RPG Resources/World.tscn"
@@ -91,4 +98,5 @@ position = Vector2( -1, 0 )
 [editable path="Player/HitboxPivot/SwordHitbox"]
 [editable path="Player/Hurtbox"]
 [editable path="Camera2D"]
+[editable path="Door"]
 [editable path="door2"]

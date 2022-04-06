@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fall (38x28).png-fe68c501c6f5d44a2c80bac0814b07e0.stex"
+path="res://.import/Fall (38x28).png-09e95bbe93bca03211ddf601203fedb3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/02-King Pig/Fall (38x28).png"
-dest_files=[ "res://.import/Fall (38x28).png-fe68c501c6f5d44a2c80bac0814b07e0.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/02-King Pig/Fall (38x28).png"
+dest_files=[ "res://.import/Fall (38x28).png-09e95bbe93bca03211ddf601203fedb3.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

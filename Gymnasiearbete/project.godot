@@ -16,7 +16,6 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Global="*res://Global.gd"
 IconLoaderGithub="*res://addons/github-integration/scripts/IconLoaderGithub.gd"
 PluginSettings="*res://addons/github-integration/scripts/PluginSettings.gd"
 UserData="*res://addons/github-integration/scripts/user_data.gd"
@@ -24,6 +23,7 @@ RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 PlayerStats="*res://fdsad/Action RPG Resources/Player/PlayerStats.tscn"
 DayNightCycle="*res://fdsad/Action RPG Resources/Day_night_cycle.gd"
 Stats="*res://fdsad/Action RPG Resources/Stats.tscn"
+Global="*res://global/Global.gd"
 
 [display]
 

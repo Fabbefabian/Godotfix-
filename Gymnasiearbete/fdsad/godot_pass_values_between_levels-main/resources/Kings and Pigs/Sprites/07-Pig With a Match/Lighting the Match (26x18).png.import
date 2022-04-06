@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Lighting the Match (26x18).png-195921103b81c717fc343cdddc74924b.stex"
+path="res://.import/Lighting the Match (26x18).png-ea42c6b438dc8cc2044d1a4677d9585b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/07-Pig With a Match/Lighting the Match (26x18).png"
-dest_files=[ "res://.import/Lighting the Match (26x18).png-195921103b81c717fc343cdddc74924b.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/07-Pig With a Match/Lighting the Match (26x18).png"
+dest_files=[ "res://.import/Lighting the Match (26x18).png-ea42c6b438dc8cc2044d1a4677d9585b.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true

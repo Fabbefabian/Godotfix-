@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Looking Out (26x20).png-b8d652427f937a74f8dd7c0710067cf9.stex"
+path="res://.import/Looking Out (26x20).png-7c0eda3f9f3e4a20551270fbf027876a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Kings and Pigs/Sprites/06-Pig Hide in the Box/Looking Out (26x20).png"
-dest_files=[ "res://.import/Looking Out (26x20).png-b8d652427f937a74f8dd7c0710067cf9.stex" ]
+source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/06-Pig Hide in the Box/Looking Out (26x20).png"
+dest_files=[ "res://.import/Looking Out (26x20).png-7c0eda3f9f3e4a20551270fbf027876a.stex" ]
 
 [params]
 
@@ -28,6 +28,7 @@ process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
+process/normal_map_invert_y=false
 stream=false
 size_limit=0
 detect_3d=true
