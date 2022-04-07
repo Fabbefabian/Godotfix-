@@ -56,5 +56,6 @@ func _on_Load_pressed():
 
 
 func _on_New_pressed():
-	get_tree(). change_scene("res://fdsad/Action RPG Resources/World.tscn")
-
+	get_tree().reload_current_scene()
+	get_tree().paused = false
+	

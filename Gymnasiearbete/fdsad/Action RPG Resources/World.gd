@@ -11,12 +11,12 @@ func _ready():
 		bridge.connect("TurnOnWaterCliffs", self, "TurnOnWaterCliffs" )
 	
 
-	print(Global.door_name)
+	#print(Global.door_name)
 	
-	if Global.door_name:
-		var door_node = find_node(Global.door_name)
-		if door_node:
-			$YSort/gobbar/Mange.global_position = door_node.global_position
+	#if Global.door_name:
+	#	var door_node = find_node(Global.door_name)
+		#if door_node:
+	#		$YSort/gobbar/Mange.global_position = door_node.global_position
 
 func TurnOffWaterCliffs():
 	WaterCliffs.set_collision_layer_bit(0, false)
