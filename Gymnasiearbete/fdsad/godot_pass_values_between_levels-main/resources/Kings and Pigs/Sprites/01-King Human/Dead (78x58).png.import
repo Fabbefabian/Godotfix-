@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead (78x58).png-ead4dc3e60351f370cecb6aab68d31f7.stex"
+path="res://.import/Dead (78x58).png-3f3220d44f22ba2af02b3ef9e741a666.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/01-King Human/Dead (78x58).png"
-dest_files=[ "res://.import/Dead (78x58).png-ead4dc3e60351f370cecb6aab68d31f7.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/01-King Human/Dead (78x58).png"
+dest_files=[ "res://.import/Dead (78x58).png-3f3220d44f22ba2af02b3ef9e741a666.stex" ]
 
 [params]
 

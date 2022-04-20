@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Shoot (44x28).png-9aa4b52b7327f236a4ffd2380cfa7ef4.stex"
+path="res://.import/Shoot (44x28).png-8b75fd0dbb7b185d596b5b2efaa8521c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/10-Cannon/Shoot (44x28).png"
-dest_files=[ "res://.import/Shoot (44x28).png-9aa4b52b7327f236a4ffd2380cfa7ef4.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/10-Cannon/Shoot (44x28).png"
+dest_files=[ "res://.import/Shoot (44x28).png-8b75fd0dbb7b185d596b5b2efaa8521c.stex" ]
 
 [params]
 

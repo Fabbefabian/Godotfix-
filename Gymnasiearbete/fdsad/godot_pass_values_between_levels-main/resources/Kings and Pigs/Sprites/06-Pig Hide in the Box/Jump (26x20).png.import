@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Jump (26x20).png-ffaee29a1137e211c61d4622b85ecc37.stex"
+path="res://.import/Jump (26x20).png-778cab0583981f35dc2800235beb585b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/06-Pig Hide in the Box/Jump (26x20).png"
-dest_files=[ "res://.import/Jump (26x20).png-ffaee29a1137e211c61d4622b85ecc37.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/06-Pig Hide in the Box/Jump (26x20).png"
+dest_files=[ "res://.import/Jump (26x20).png-778cab0583981f35dc2800235beb585b.stex" ]
 
 [params]
 

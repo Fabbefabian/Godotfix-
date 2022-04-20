@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Lighting the Cannon (26x18).png-26d022d783a0d1b3e486228bb60c3dd1.stex"
+path="res://.import/Lighting the Cannon (26x18).png-2eceae2aad3e3e4d6e7789094c86aad0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/07-Pig With a Match/Lighting the Cannon (26x18).png"
-dest_files=[ "res://.import/Lighting the Cannon (26x18).png-26d022d783a0d1b3e486228bb60c3dd1.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/07-Pig With a Match/Lighting the Cannon (26x18).png"
+dest_files=[ "res://.import/Lighting the Cannon (26x18).png-2eceae2aad3e3e4d6e7789094c86aad0.stex" ]
 
 [params]
 

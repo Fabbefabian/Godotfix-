@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Match On (26x18).png-705441b7b23ffda56bec10b285c3b910.stex"
+path="res://.import/Match On (26x18).png-80de0f4f1451f605854ba4b316000a7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/07-Pig With a Match/Match On (26x18).png"
-dest_files=[ "res://.import/Match On (26x18).png-705441b7b23ffda56bec10b285c3b910.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/07-Pig With a Match/Match On (26x18).png"
+dest_files=[ "res://.import/Match On (26x18).png-80de0f4f1451f605854ba4b316000a7b.stex" ]
 
 [params]
 

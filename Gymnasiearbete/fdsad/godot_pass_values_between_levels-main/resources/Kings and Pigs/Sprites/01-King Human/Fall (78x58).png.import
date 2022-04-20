@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fall (78x58).png-f72408391c8650edbe9e3df90ef14d81.stex"
+path="res://.import/Fall (78x58).png-b57643894e31200bf62aa73177bb3ab5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/01-King Human/Fall (78x58).png"
-dest_files=[ "res://.import/Fall (78x58).png-f72408391c8650edbe9e3df90ef14d81.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/01-King Human/Fall (78x58).png"
+dest_files=[ "res://.import/Fall (78x58).png-b57643894e31200bf62aa73177bb3ab5.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Attack Out (24x8).png-383342921d2ff10ffda8ea8855e50c36.stex"
+path="res://.import/Attack Out (24x8).png-5986d1992022c428fd38e76711c0d150.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Attack Out (24x8).png"
-dest_files=[ "res://.import/Attack Out (24x8).png-383342921d2ff10ffda8ea8855e50c36.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Attack Out (24x8).png"
+dest_files=[ "res://.import/Attack Out (24x8).png-5986d1992022c428fd38e76711c0d150.stex" ]
 
 [params]
 

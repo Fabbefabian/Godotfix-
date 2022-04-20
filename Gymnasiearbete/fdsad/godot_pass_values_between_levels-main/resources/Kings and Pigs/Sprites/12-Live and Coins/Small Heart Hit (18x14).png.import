@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Small Heart Hit (18x14).png-d843cd3770bca0521d2fd26df8ea94f4.stex"
+path="res://.import/Small Heart Hit (18x14).png-b2b8ca89a6b8decded61660d73abfd45.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/12-Live and Coins/Small Heart Hit (18x14).png"
-dest_files=[ "res://.import/Small Heart Hit (18x14).png-d843cd3770bca0521d2fd26df8ea94f4.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/12-Live and Coins/Small Heart Hit (18x14).png"
+dest_files=[ "res://.import/Small Heart Hit (18x14).png-b2b8ca89a6b8decded61660d73abfd45.stex" ]
 
 [params]
 

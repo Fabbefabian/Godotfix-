@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hello Out (24x8).png-246d4dbdb52afe73cb6b9fa35a3b0d65.stex"
+path="res://.import/Hello Out (24x8).png-204cdb704ae7df1191502056c0ec2627.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Hello Out (24x8).png"
-dest_files=[ "res://.import/Hello Out (24x8).png-246d4dbdb52afe73cb6b9fa35a3b0d65.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Hello Out (24x8).png"
+dest_files=[ "res://.import/Hello Out (24x8).png-204cdb704ae7df1191502056c0ec2627.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead Out (24x8).png-f9ee6b478470579fcefd09f67022b7b3.stex"
+path="res://.import/Dead Out (24x8).png-57b5cfc14d4b573e1b695329bff903cf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Dead Out (24x8).png"
-dest_files=[ "res://.import/Dead Out (24x8).png-f9ee6b478470579fcefd09f67022b7b3.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Dead Out (24x8).png"
+dest_files=[ "res://.import/Dead Out (24x8).png-57b5cfc14d4b573e1b695329bff903cf.stex" ]
 
 [params]
 

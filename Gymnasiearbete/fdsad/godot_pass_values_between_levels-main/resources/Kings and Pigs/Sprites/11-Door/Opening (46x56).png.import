@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Opening (46x56).png-baacec0422667890132ff654b38201e3.stex"
+path="res://.import/Opening (46x56).png-446e6db24b8f8cedfd1354ec43c9d85b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/11-Door/Opening (46x56).png"
-dest_files=[ "res://.import/Opening (46x56).png-baacec0422667890132ff654b38201e3.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/11-Door/Opening (46x56).png"
+dest_files=[ "res://.import/Opening (46x56).png-446e6db24b8f8cedfd1354ec43c9d85b.stex" ]
 
 [params]
 

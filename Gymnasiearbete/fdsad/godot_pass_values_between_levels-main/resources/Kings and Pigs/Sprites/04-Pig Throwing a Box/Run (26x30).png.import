@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (26x30).png-b458f834189b2f36f992654299a854db.stex"
+path="res://.import/Run (26x30).png-cc49dab82ef1a26c30306326eef7098c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/04-Pig Throwing a Box/Run (26x30).png"
-dest_files=[ "res://.import/Run (26x30).png-b458f834189b2f36f992654299a854db.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/04-Pig Throwing a Box/Run (26x30).png"
+dest_files=[ "res://.import/Run (26x30).png-cc49dab82ef1a26c30306326eef7098c.stex" ]
 
 [params]
 

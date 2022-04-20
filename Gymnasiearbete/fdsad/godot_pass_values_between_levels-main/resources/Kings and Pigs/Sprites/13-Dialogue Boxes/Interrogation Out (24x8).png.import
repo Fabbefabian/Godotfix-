@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Interrogation Out (24x8).png-ac32025de10a43c64850fe0ee055bc0e.stex"
+path="res://.import/Interrogation Out (24x8).png-3cf1281a1614f6ec803a33062452a403.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Interrogation Out (24x8).png"
-dest_files=[ "res://.import/Interrogation Out (24x8).png-ac32025de10a43c64850fe0ee055bc0e.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/13-Dialogue Boxes/Interrogation Out (24x8).png"
+dest_files=[ "res://.import/Interrogation Out (24x8).png-3cf1281a1614f6ec803a33062452a403.stex" ]
 
 [params]
 

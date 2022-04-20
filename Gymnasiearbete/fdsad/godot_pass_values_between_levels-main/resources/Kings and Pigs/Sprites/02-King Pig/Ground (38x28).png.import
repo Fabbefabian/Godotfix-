@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ground (38x28).png-da90c2d5f72a1c62960a13a14fbc6876.stex"
+path="res://.import/Ground (38x28).png-e2e25f97a5c880fc222af8234b01c088.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/02-King Pig/Ground (38x28).png"
-dest_files=[ "res://.import/Ground (38x28).png-da90c2d5f72a1c62960a13a14fbc6876.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/02-King Pig/Ground (38x28).png"
+dest_files=[ "res://.import/Ground (38x28).png-e2e25f97a5c880fc222af8234b01c088.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Idle (38x28).png-94dc7464bb610f6cef8332aee595684f.stex"
+path="res://.import/Idle (38x28).png-49cff31dff107f913d5a28682282ee6a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/02-King Pig/Idle (38x28).png"
-dest_files=[ "res://.import/Idle (38x28).png-94dc7464bb610f6cef8332aee595684f.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/02-King Pig/Idle (38x28).png"
+dest_files=[ "res://.import/Idle (38x28).png-49cff31dff107f913d5a28682282ee6a.stex" ]
 
 [params]
 

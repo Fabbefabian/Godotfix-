@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Run (38x28).png-95c10950903b61663fbd9669ccf21321.stex"
+path="res://.import/Run (38x28).png-43270229d0ccca23297141e10acee823.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://fdsad/godot_pass_values_between_levels-main/resources/Kings and Pigs/Sprites/02-King Pig/Run (38x28).png"
-dest_files=[ "res://.import/Run (38x28).png-95c10950903b61663fbd9669ccf21321.stex" ]
+source_file="res://resources/Kings and Pigs/Sprites/02-King Pig/Run (38x28).png"
+dest_files=[ "res://.import/Run (38x28).png-43270229d0ccca23297141e10acee823.stex" ]
 
 [params]
 
