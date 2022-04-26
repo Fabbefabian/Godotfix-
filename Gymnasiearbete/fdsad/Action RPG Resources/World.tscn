@@ -1126,13 +1126,16 @@ position = Vector2( 273, 51 )
 scale = Vector2( 0.0488281, 0.0449219 )
 frames = SubResource( 142 )
 animation = "pony"
-frame = 18
+frame = 11
 playing = true
 
 [node name="gobbar" type="YSort" parent="YSort"]
 
 [node name="Filip" parent="YSort/gobbar" instance=ExtResource( 9 )]
 position = Vector2( -426, -85 )
+
+[node name="AnimatedSprite" parent="YSort/gobbar/Filip" index="0"]
+frame = 0
 
 [node name="Mange" parent="YSort/gobbar" instance=ExtResource( 2 )]
 position = Vector2( 147, 81 )

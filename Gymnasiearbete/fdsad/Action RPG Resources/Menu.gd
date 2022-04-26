@@ -1,5 +1,5 @@
 extends Control
-
+#denna gör så man kan använda piltangenterna
 func _ready():
 	$VBoxContainer/StartButton.grab_focus()
 

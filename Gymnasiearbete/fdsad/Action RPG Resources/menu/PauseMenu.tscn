@@ -72,10 +72,14 @@ color = Color( 0.0117647, 0.0784314, 0.172549, 0.588235 )
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 pause_mode = 2
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_top = -1.0
-margin_bottom = -1.0
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -160.0
+margin_top = -90.0
+margin_right = 160.0
+margin_bottom = 90.0
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
 pause_mode = 2
