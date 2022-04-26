@@ -50,7 +50,7 @@ height = 6.0
 radius = 51.0
 
 [sub_resource type="CircleShape2D" id=10]
-radius = 13.0
+radius = 13.8924
 
 [sub_resource type="CapsuleShape2D" id=12]
 radius = 5.0
@@ -69,7 +69,7 @@ position = Vector2( 3.5, 0 )
 scale = Vector2( 1.14, 1 )
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 1
+frame = 3
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -98,12 +98,12 @@ visible = false
 shape = SubResource( 9 )
 
 [node name="Hitbox" parent="." instance=ExtResource( 7 )]
-position = Vector2( -1, 0 )
+position = Vector2( -1, -1 )
 collision_mask = 4
 damage = 3
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
-position = Vector2( 4, 6 )
+position = Vector2( 4, 5 )
 shape = SubResource( 10 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Hitbox"]

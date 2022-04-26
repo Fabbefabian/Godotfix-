@@ -1,23 +1,20 @@
+tool
 extends Area2D
 
-export(String, FILE, "*tscn, *.scn") var target_scene
-
-func _ready():
-	pass
+export(String, FILE, "*tscn, *.scn") var target_scene = ""
+export(Vector2) var player_spawn_location = Vector2.ZERO
 
 
+func _get_configuration_warning()-> String:
+	if target_scene == "":
+		return "target_scene must be set for it to work"
+	else:
+		return""
 
-func _input(event):
-	if event.is_action_pressed("ui_accept"):
-		if get_overlapping_bodies().size() > 0:
-			if !target_scene:
-				print("no scene in this door")
-				return
-	
-	
-func next_level():
-	var ERR = get_tree().change_scene(target_scene)
-	
-	if ERR != OK:
-		print("something went wrong")
-	Global.door_name = name
+
+
+func _on_Area2D_body_entered(body):
+	Global.player_initial_map_position = player_spawn_location
+	if get_tree().change_scene(target_scene)!=OK:
+		#denna skriver ut fellogg
+		print("unavailable scnene!?!?!")

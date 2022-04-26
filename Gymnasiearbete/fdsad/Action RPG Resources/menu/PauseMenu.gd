@@ -31,6 +31,7 @@ func _on_Quit_pressed():
 
 
 func _on_Settings_pressed():
+	$CenterContainer/VBoxContainer3/Fullscreen.grab_focus()
 	$CenterContainer/VBoxContainer3.visible=true
 	$CenterContainer/VBoxContainer.visible=false
 
@@ -47,6 +48,7 @@ func _on_Keybinds_pressed():
 
 
 func _on_Back_pressed():
+	$CenterContainer/VBoxContainer/Resume.grab_focus()
 	$CenterContainer/VBoxContainer3.visible=false
 	$CenterContainer/VBoxContainer.visible=true
 

@@ -28,6 +28,8 @@ onready var hurtbox = $Hurtbox
 
 
 func _ready():
+	self.global_position = Global.player_initial_map_position
+	
 	stats.connect("no_health", self, "queue_free")
 	animationTree.active=true
 	SwordHitbox.knockback_vector = roll_vector
@@ -119,3 +121,5 @@ func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage
 	hurtbox.start_invincibility(0.5)
 	hurtbox.create_hit_effect()
+
+

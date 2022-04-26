@@ -13,6 +13,7 @@ func _on_QuitButton_pressed():
 
 
 func _on_Options_pressed():
+	$VBoxContainer2/Fullscreen.grab_focus()
 	$VBoxContainer2.visible=true
 	$VBoxContainer.visible=false
 	
@@ -28,6 +29,7 @@ func _on_Keybinds_pressed():
 
 
 func _on_Goback_pressed():
+	$VBoxContainer/StartButton.grab_focus()
 	$VBoxContainer2.visible=false
 	$VBoxContainer.visible=true
 

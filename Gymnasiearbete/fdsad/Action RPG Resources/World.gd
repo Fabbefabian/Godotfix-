@@ -1,4 +1,6 @@
 extends Node2D
+var player_initial_map_position = Vector2(147,81)
+export(Vector2) var player_spawn_location = Vector2.ZERO
 
 
 #den hämta noden watercliffs

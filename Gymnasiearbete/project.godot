@@ -23,7 +23,8 @@ RestHandler="*res://addons/github-integration/scenes/RestHandler.tscn"
 PlayerStats="*res://fdsad/Action RPG Resources/Player/PlayerStats.tscn"
 DayNightCycle="*res://fdsad/Action RPG Resources/Day_night_cycle.gd"
 Stats="*res://fdsad/Action RPG Resources/Stats.tscn"
-Global="*res://global/Global.gd"
+Global="*res://Global.gd"
+HpDrop="*res://fdsad/Action RPG Resources/UI/HpDrop.tscn"
 
 [display]
 
@@ -132,6 +133,7 @@ Sprint={
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="SoftCollision"
 2d_physics/layer_8="Water"
+2d_physics/layer_9="Portal"
 
 [physics]
 
