@@ -13,13 +13,8 @@ func _ready():
 		bridge.connect("TurnOnWaterCliffs", self, "TurnOnWaterCliffs" )
 	
 
-	#print(Global.door_name)
 	
-	#if Global.door_name:
-	#	var door_node = find_node(Global.door_name)
-		#if door_node:
-	#		$YSort/gobbar/Mange.global_position = door_node.global_position
-
+#denna ändra layern på din collision och gör så du kan gå genom vattnet vid vissa platser
 func TurnOffWaterCliffs():
 	WaterCliffs.set_collision_layer_bit(0, false)
 	WaterCliffs.set_collision_mask_bit(0, false)
