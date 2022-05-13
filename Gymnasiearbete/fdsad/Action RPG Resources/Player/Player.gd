@@ -81,6 +81,7 @@ func move_state(delta):
 			animationTree.set("parameters/Attack/blend_position", input_vector)
 			animationTree.set("parameters/Roll/blend_position", input_vector)
 			animationState.travel("Run")
+			#du har vector * max hastighet. Vector är matte. Så då blir det som 1 gånger vad du har på max hastighet
 			velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 		 
 		else:
@@ -106,12 +107,12 @@ func attack_state(_delta):
 	
 func move():
 	velocity = move_and_slide(velocity)
-
+#hur mycket han rör sig efter animationen slutar
 func roll_animation_finished():
 	velocity = Vector2.ZERO
 	state = MOVE
 
-
+#efter du attackerat kan du röra dig igen
 func attack_animation_finished():
 	state = MOVE
 

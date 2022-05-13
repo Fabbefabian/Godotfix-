@@ -74,6 +74,8 @@ playing = true
 offset = Vector2( 0, -12 )
 
 [node name="Shadow" type="Sprite" parent="."]
+position = Vector2( 4, 17 )
+scale = Vector2( 1.4, 1 )
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -111,7 +113,6 @@ position = Vector2( 4, 7 )
 shape = SubResource( 12 )
 
 [node name="SoftCollision" parent="." instance=ExtResource( 8 )]
-visible = false
 
 [node name="CollisionShape2D" parent="SoftCollision" index="0"]
 shape = SubResource( 11 )

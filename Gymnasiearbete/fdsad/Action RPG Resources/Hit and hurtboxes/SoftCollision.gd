@@ -1,6 +1,6 @@
 extends Area2D
 
-
+#när man går in i honom så puttas han iväg
 func is_colliding():
 	var areas = get_overlapping_areas()
 	return areas.size() >0
